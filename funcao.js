@@ -1,5 +1,6 @@
 // função = function \ retorno = return
 
+var prompt =require("prompt-sync")()
 
 let x = +prompt("digite um numero:")
 let y = +prompt("digiteum numero:")
