@@ -35,4 +35,18 @@ if (nota >=0 && nota<=10){
     else  nota <=9.0{alert("sua nota foi "+nota+" esta com media B")}}
    else {alert("sua nota foi "+nota+" esta com media A")};
 
+   const inf = [{nome:(prompt("nome:")),
+endereco:(prompt("endereco:")),
+hobby:(prompt("hobby:"))
+}]
+let ind=0;
+let saida=0;
+while (ind <inf.length){
+    
+    const { nome,endereco,hobby}= inf[ind];
+   
+    saida=nome+endereco+hobby;
+    ind++; 
+};
+console.log();
 
