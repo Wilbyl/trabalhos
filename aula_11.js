@@ -38,3 +38,11 @@ delete pep.genero;
 
 console.log()
 console.log(pep)
+
+let lug={
+    nome:"valquiria",
+    idade:"4 meses",
+    peso:'5 kl'
+};
+lug.vamos=["mamadeira","mochila","negocio","leite"];
+console.log(lug);
