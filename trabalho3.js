@@ -22,7 +22,7 @@ while (GO==="S" || GO==="s" ){
 
     }
 
-    do{ 
+    do{    
         for(var i=0 ; i < jg; i++ );
     
         var v3 = +prompt("Escolha '6' '1' '2' '3' '4' '5' ");
@@ -35,7 +35,7 @@ while (GO==="S" || GO==="s" ){
 
 
      
-    --jg
+    
     }while (jg>0);
 --v1
     }while(v1>0);
