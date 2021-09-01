@@ -53,4 +53,3 @@ lug.bio=function(){ //.this e usado pra achae e usar direto uma lista
 }
 console.log(lug.bio());
 
-let catalogo=[film1,film2,film3,film4.film5];
