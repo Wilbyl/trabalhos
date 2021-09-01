@@ -46,3 +46,11 @@ let lug={
 };
 lug.vamos=["mamadeira","mochila","negocio","leite"];
 console.log(lug);
+
+//function() anonima e usada para executar uma funçao de mogo que assim que o programa rodar ele seja executado.
+lug.bio=function(){ //.this e usado pra achae e usar direto uma lista
+    return `meu nome é ${this.nome} ,tenho ${this.idade},e peso ${this.peso} `;
+}
+console.log(lug.bio());
+
+let catalogo=[film1,film2,film3,film4.film5];
