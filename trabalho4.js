@@ -14,10 +14,12 @@ while (GO==="S" || GO==="s" ){
      
      do{ for(var i=0 ; i < v1; i++ )
 
-     var v2 = prompt("Quantos iram jogar?:");
-
     var jg = prompt("Quantos jogadores:");
-    
+     let list ={
+         nome:prompt("digite seu nome:"),
+         numero:prompt("numero:")
+     }
+
     }
 
     do{ 
