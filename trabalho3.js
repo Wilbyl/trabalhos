@@ -18,7 +18,7 @@ while (GO==="S" || GO==="s" ){
      let list ={
          nome:prompt("digite seu nome:"),
          numero:prompt("numero:")
-     }
+     };
 
     }
 
@@ -30,11 +30,14 @@ while (GO==="S" || GO==="s" ){
         var computador = aleatorio[Math.floor(Math.random() * aleatorio.length)];
 
 
+        
 
 
 
 
-     
+        console.log(game.sort(function(a, b) {
+            return +(a.diceNum - b.diceNum) && +(a.round - b.round) - 1;
+          }));
     
     }while (jg>0);
 --v1
