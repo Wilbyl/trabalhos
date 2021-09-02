@@ -11,19 +11,21 @@ while (GO==="S" || GO==="s" ){
     reset();
 
      var v1 = prompt("Digite quantas rodadas deseja jogar:");
+     var jg = prompt("Quantos jogadores:");
+     
      
      do{ for(var i=0 ; i < v1; i++ )
 
-    var jg = prompt("Quantos jogadores:");
+     
      let list ={
          nome:prompt("digite seu nome:"),
          numero:prompt("numero:")
      };
 
-    }
+    
 
     do{    
-        for(var i=0 ; i < jg; i++ );
+        for(var w=0 ; w < jg; w++ );
     
         var v3 = +prompt("Escolha '6' '1' '2' '3' '4' '5' ");
         var aleatorio = [6,1, 2,3,4,5];
@@ -40,8 +42,8 @@ while (GO==="S" || GO==="s" ){
           }));
     
     }while (jg>0);
---v1
+     --v1
     }while(v1>0);
 
-} if (GO==="N" || GO==="n")
+}if (GO==="N" || GO==="n")
 {console.log("Até a proxima")};

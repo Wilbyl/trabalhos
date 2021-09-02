@@ -20,4 +20,8 @@ const props= Object.keys(film);
 
 for(let i=0; i<props.length; i++){
     console.log(film[props[i]]);
+};// o "for" percorre todo o programa lendo cada objeto e exibindo o nvalor dela;
+
+for(const prop of props){//faz a mesma coisa que o anterior;
+    console.log(film[prop])
 };
