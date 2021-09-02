@@ -8,13 +8,13 @@ const film={
     ano:"2013",
     atores:["os pinguins","Rei julian","Alex","Gia"]
 
-};
-/*console.log(film);
+};/*
+console.log(film);
 console.log(Object.keys(film));//tras todos os objetos em formna de uma lista;
 
 console.log(Object.values(film));//tras todos os valores em forma de lista;
 
-console.log (Object.entries(film))// tras todos os valores e objetos;*/
+console.log (Object.entries(film))// tras todos os valores e objetos;
 
 const props= Object.keys(film);
 
@@ -25,3 +25,26 @@ for(let i=0; i<props.length; i++){
 for(const prop of props){//faz a mesma coisa que o anterior;
     console.log(film[prop])
 };
+
+for(const props in film){ //faz o mesmo de cima;
+    console.log(props,film[props])
+};*/
+
+const receber = require("prompt-sync")();
+
+const films =[];
+
+const w1 = receber("digite seus filmes:");
+
+const filme={};
+for (let i=0;i<w1;i++){
+
+
+filme.nome= receber("digite o nome do filme:");
+filme.duracao= receber("digite a duracao do filme:");
+filme.ano= receber("digite o ano:");
+
+films.push(filme);
+
+};
+console.log(filme);//guarda as informaçoes e depois exibe todas uma ao lado da outra;
