@@ -8,8 +8,8 @@ const film={
     ano:"2013",
     atores:["os pinguins","Rei julian","Alex","Gia"]
 
-};/*
-console.log(film);
+};
+/*console.log(film);
 console.log(Object.keys(film));//tras todos os objetos em formna de uma lista;
 
 console.log(Object.values(film));//tras todos os valores em forma de lista;
@@ -20,7 +20,7 @@ const props= Object.keys(film);
 
 for(let i=0; i<props.length; i++){
     console.log(film[props[i]]);
-};// o "for" percorre todo o programa lendo cada objeto e exibindo o nvalor dela;
+};// o "for" percorre todo o programa lendo cada objeto e exibindo o valor dela;
 
 for(const prop of props){//faz a mesma coisa que o anterior;
     console.log(film[prop])
@@ -30,19 +30,19 @@ for(const props in film){ //faz o mesmo de cima;
     console.log(props,film[props])
 };*/
 
-const receber = require("prompt-sync")();
 
 const films =[];
 
-const w1 = receber("digite seus filmes:");
+const w1 = prompt("Quantos seus filmes:");
 
 const filme={};
+
 for (let i=0;i<w1;i++){
 
 
-filme.nome= receber("digite o nome do filme:");
-filme.duracao= receber("digite a duracao do filme:");
-filme.ano= receber("digite o ano:");
+filme.nome= prompt("digite o nome do filme:");
+filme.duracao= prompt("digite a duracao do filme:");
+filme.ano= prompt("digite o ano:");
 
 films.push(filme);
 
