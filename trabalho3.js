@@ -10,16 +10,19 @@ var GO = "S"
 while (GO==="S" || GO==="s" ){
     reset();
 
-     var v1 = prompt("Digite quantas rodadas deseja jogar:");
-     var jg = prompt("Quantos jogadores:");
+     var v1 = +prompt("Digite quantas rodadas deseja jogar:");
+     var jg = +prompt("Quantos jogadores:");
+     var lista=[];
      
-     
-     do{ for(var i=0 ; i < v1; i++ )
+    for(var i=0 ; i < jg; i++ )
 
      
-     let list ={
+     
+    
+    lista.push(jg)//aqui vc armazena tudo que esta dentro da lista
+    let list ={
          nome:prompt("digite seu nome:"),
-         numero:prompt("numero:")
+         dado:computador
      };
 
     
@@ -27,23 +30,27 @@ while (GO==="S" || GO==="s" ){
     do{    
         for(var w=0 ; w < jg; w++ );
     
-        var v3 = +prompt("Escolha '6' '1' '2' '3' '4' '5' ");
+        var v3 = +prompt("Escolha '6' '1' '2' '3' '4' '5': ");
         var aleatorio = [6,1, 2,3,4,5];
         var computador = aleatorio[Math.floor(Math.random() * aleatorio.length)];
 
 
-        
+        lista.spete((a,b)=>{//pra determinar a ordem de ganhadores
+            if(b.dado<a.dado){
+                return-1
+                }else{
+                        return true
+                    }
+                }
+        );
 
 
 
 
-        console.log(game.sort(function(a, b) {
-            return +(a.diceNum - b.diceNum) && +(a.round - b.round) - 1;
-          }));
-    
+       
     }while (jg>0);
      --v1
     }while(v1>0);
 
-}if (GO==="N" || GO==="n")
+if (GO==="N" || GO==="n")
 {console.log("Até a proxima")};
