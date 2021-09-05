@@ -1,6 +1,16 @@
 const  prompt=require("prompt-sync")()
 
 //trabalho de Dice Game
+/*• Perguntar quantas rodadas você quer fazer; (1,0 ponto)
+• Perguntar quantos jogadores vão jogar; (1,5 pontos)
+• Criar um objeto pra cada jogador com nome e número tirado; (1,5 pontos)
+• Guarda todos os objetos em uma lista; (2,0 pontos)
+• Ordenar esses objetos, sabendo que o vencedor tirou o maior número
+no dado. (2,0 pontos)
+• Mostrar no final qual jogador ganhou mais rodadas e foi o grande
+campeão. (2,0 pontos)*/
+
+
 
 function reset (){
     w1 =0;
@@ -20,10 +30,7 @@ while (GO==="S" || GO==="s" ){
      
     
     lista.push(jg)//aqui vc armazena tudo que esta dentro da lista
-    let list ={
-         nome:prompt("digite seu nome:"),
-         dado:computador
-     };
+    
 
     
 
@@ -31,9 +38,12 @@ while (GO==="S" || GO==="s" ){
         for(var w=0 ; w < jg; w++ );
     
         var v3 = +prompt("Escolha '6' '1' '2' '3' '4' '5': ");
-        var aleatorio = [6,1, 2,3,4,5];
-        var computador = aleatorio[Math.floor(Math.random() * aleatorio.length)];
+        var dado = [6,1,2,3,4,5];
+        var dado = dado[Math.floor(Math.random() * dado.length)];
 
+        function random(){
+            return Math.floor(Math.random() * 6) + 1
+            }
 
         lista.spete((a,b)=>{//pra determinar a ordem de ganhadores
             if(b.dado<a.dado){
@@ -44,7 +54,10 @@ while (GO==="S" || GO==="s" ){
                 }
         );
 
-
+        let list ={
+            nome:prompt("digite seu nome:"),
+            dado:computador
+        };
 
 
        
