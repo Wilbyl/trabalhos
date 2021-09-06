@@ -26,7 +26,7 @@ for(let w=0; w<jg; w++ ){//a quantidade de jogadores vai executar essa açao
     }
     
 };
-//infelizmente nao consegui terminar meu projeto mais entregar e o que importa e eu prometo me esforçar mais nos proximos desafios e trabalhos...
+
 
 
 
