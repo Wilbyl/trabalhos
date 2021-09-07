@@ -20,4 +20,18 @@ num.forEach(tab);*/
 
 
 
+/*const lista=[
+    "up",
+    "click",
+    "doom",
+    "frozen",
+    "amarelo",
+    "mortal kombate"
+];
 
+let index = 0;
+
+while (index < lista.length){
+    console.log(lista[index])
+index++;
+};*/
