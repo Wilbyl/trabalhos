@@ -2,16 +2,16 @@
 const prompt = require("prompt-sync")();
 
 console.log("******Bem vindo ao game jokenpô******");
-console.log()
-console.log("========='REGRAS'=========")
-console.log()
+console.log();
+console.log("========='REGRAS'=========");
+console.log();
 console.log("escolha '0' para 'pedras' ","escolhas '1' para 'papel' ","escolha '2' para 'tesolra' ");
-console.log()
+console.log();
 
-var GO = "S"
+var GO = "S";
 
-var w1=0
-var l1=0
+var w1=0;
+var l1=0;
 
 function reset (){
 w1 =0;
@@ -56,7 +56,7 @@ while (GO==="S" || GO==="s" ){
     
     }
 
-    console.log ("====================================================================================")
+    console.log ("====================================================================================");
     if (w1>l1){ console.log("***Venceder***");
     }else if(w1<l1) {console.log("===Perderdor===")}
     else console.log("+++Empate+++");

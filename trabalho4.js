@@ -15,24 +15,41 @@ Ter uma função chamada exibirResultados() que deve mostrar: (2,0 pontos)
 
  const  prompt=require("prompt-sync")();
 
- //usar o do e wilhe pra continuar
 
- function autorizarVoto(anoNascimento){
-    return 
-    Obrigatorio =0;
-    Opicional =0;
-    Negado =0;
+
+ var v1 =0;
+
+ do{
+     
+function autorizarVoto(anoNascimento){//aqui eu valido se a pessoa pode votar ou nao
+    if(2020-anoNascimento <= 16){
+        return this.Negado;
+    }else if (2020-anoNascimento >=17 || 2020-anoNascimento <=19){
+        return this.opicional;
+    }else if (this.obrigaorio);
 };
-function votacao(aotorizacao,voto){
-    voto.candidato1= 0;
-    voto.candodato2=0 ;
-    votovoto.candidato3=0 ;
-    voto.votoNulo=0 ;
-    voto.votoBranco=0 ;
-
+function votacao(autorizacao, voto) {//aqui declaro os votos.
+    if ( autorizacao === 'negado') {
+        console.log('Voce ainda nao pode votar ,espera mais um pouco!!');
+        console.log();
+    } else if ( (autorizacao === 'opcional' || autorizacao === 'obrigatorio') && voto == 1 ) {
+        cand1++;
+    } else if ( (autorizacao === 'opcional'||  autorizacao === 'obrigatorio') && voto == 2 ) {
+        cand2++;
+    } else if ( (autorizacao === 'opcional' || autorizacao === 'obrigatorio') && voto == 3 ) {
+        cand3++;
+    } else if ( (autorizacao === 'opcional'||  autorizacao === 'obrigatorio') && voto == 4 ) {
+        cand4++;
+    } else if ( (autorizacao === 'opcional' || autorizacao === 'obrigatorio') && voto == 5 ) {
+        cand5++;
+    }
 }
+ 
 
-function ExibirResultado(){
 
 
-};
+
+
+
+
+ }while(console.log("amen"));
