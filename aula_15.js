@@ -20,3 +20,20 @@ Voto(){
 let urna = new Construtor(); //agora meu objeto foi criado e posso usar ele;*/
 
 
+// Programa Sincronos 
+// Programas Assincronos
+function enviarEmail(corpo,para){
+    setTimeout(
+        function(){console.log(
+        `  Para: ${para}
+        ============================================================
+        Corpo:${corpo}
+        ============================================================
+
+        De: Will
+            `);
+    },4000);
+};
+console.log("inicio do Email:");
+
+enviarEmail("Parabens vc ganhou um desconto de 10% ");
