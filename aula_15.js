@@ -22,7 +22,7 @@ let urna = new Construtor(); //agora meu objeto foi criado e posso usar ele;*/
 
 // Programa Sincronos 
 // Programas Assincronos
-function enviarEmail(corpo,para){
+function enviarEmail(corpo,para, callback){
     setTimeout(
         function(){console.log(
         `  Para: ${para}
@@ -31,9 +31,21 @@ function enviarEmail(corpo,para){
         ============================================================
 
         De: Will
-            `);
+        `);
+
+
+
+
+        
+        callback();
     },4000);
 };
-console.log("inicio do Email:");
 
-enviarEmail("Parabens vc ganhou um desconto de 10% ");
+
+
+enviarEmail("Parabens vc ganhou um desconto de 10% ","nao gaste atoa",
+function(){
+    console.log("inicio do Email ");
+    console.log("ok");
+    }
+    ); // o nosso CallBack passa o parametro da função

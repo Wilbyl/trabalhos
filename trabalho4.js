@@ -15,14 +15,24 @@ Ter uma função chamada exibirResultados() que deve mostrar: (2,0 pontos)
 
  const  prompt=require("prompt-sync")();
 
- 
+ //usar o do e wilhe pra continuar
 
  function autorizarVoto(anoNascimento){
     return 
-    Obrigatorio ="";
-    Opicional ="";
-    Negado ="";
+    Obrigatorio =0;
+    Opicional =0;
+    Negado =0;
 };
 function votacao(aotorizacao,voto){
+    voto.candidato1= 0;
+    voto.candodato2=0 ;
+    votovoto.candidato3=0 ;
+    voto.votoNulo=0 ;
+    voto.votoBranco=0 ;
+
+}
+
+function ExibirResultado(){
+
 
 };
