@@ -15,7 +15,12 @@ Ter uma função chamada exibirResultados() que deve mostrar: (2,0 pontos)
 
  const  prompt=require("prompt-sync")();
 
- 
+ function exibirResultados(){
+     for (let i in candidato){
+         console.log(`${i}:${candidato}
+         `);
+     }
+ };
  function autorizarVoto(anoNascimento){//aqui eu valido se a pessoa pode votar ou nao
  let idade = 2021 - anoNascimento;
  
@@ -27,27 +32,28 @@ Ter uma função chamada exibirResultados() que deve mostrar: (2,0 pontos)
     return "obrigatorio"};
  };//usar essa saida pra confimar que posso volar
 
- function votacao (anoNascimento, voto) {//aqui declaro os votos. essa parte foi feita pela sha.
+ function votacao (anoNascimento, voto) {//aqui declaro os votos.
  
         if ( voto == 1 ) {
-         gat++;     //colocar a somatoraia aqui
+            candidato.gat++;     //colocar a somatoraia aqui
      } else if (voto == 2 ) {
-         cach++;
+        candidato.cach++;
      } else if ( voto == 3 ) {
-         pass++;        //colocar o nome da variavel que ganha o voto
+        candidato.pass++;        //colocar o nome da variavel que ganha o voto
      } else if ( voto == 4 ) {
-         nul++;
+        candidato.nul++;
      } else if ( voto == 5 ) {
-        branco++; 
+        candidato.branco++; 
      }
  
  }
- var candidato=[
-  gat =0,
-  cach = 0,
-  pass = 0,
-  nul = 0,
-  branco = 0];
+ var candidato={
+  gat :0,
+  cach : 0,
+  pass : 0,
+  nul : 0,
+  branco : 0
+ }
  
  console.log(` 
 ==================================================================
@@ -60,10 +66,6 @@ Ter uma função chamada exibirResultados() que deve mostrar: (2,0 pontos)
 ================================================================== 
 `
 );
-
-
-
- var v1 =0;
 
  do{
      let anoNascimento =+prompt("Digite ano de nascimento: ") ;
@@ -79,6 +81,7 @@ let voto= prompt("Em quem deseja votar: ");
 votacao (autorizarVoto,voto);
 
 
+
 console.log("Amen");
 
 var perg = prompt("Quer votar ?[S/N]");
@@ -88,4 +91,4 @@ var perg = prompt("Quer votar ?[S/N]");
 }while(perg == "S"|| perg == "s");
  
 
- console.log(branco);
+ console.log(candidato);
