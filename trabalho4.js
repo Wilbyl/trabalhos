@@ -17,9 +17,18 @@ Ter uma função chamada exibirResultados() que deve mostrar: (2,0 pontos)
 
  function exibirResultados(){
      for (let i in candidato){
-         console.log(`${i}:${candidato}
+         console.log(`${i}:${candidato[i]}
          `);
      }
+     let ganhador = "gat";
+     delete candidato.nul;
+     delete candidato.branco;
+     for (let i in candidato) {
+       if (candidato[i] > candidato[ganhador]) {
+         ganhador = i;
+       }
+     }console.log(ganhador);
+     
  };
  function autorizarVoto(anoNascimento){//aqui eu valido se a pessoa pode votar ou nao
  let idade = 2021 - anoNascimento;
@@ -91,4 +100,4 @@ var perg = prompt("Quer votar ?[S/N]");
 }while(perg == "S"|| perg == "s");
  
 
- console.log(candidato);
+exibirResultados();
