@@ -34,7 +34,7 @@ console.log(`
 
  do{
      let anoNascimento =+prompt("Digite ano de nascimento: ") ;
-    let voto=0;
+
     let autorizacao = "";
 
 function autorizarVoto(anoNascimento){//aqui eu valido se a pessoa pode votar ou nao
@@ -48,25 +48,25 @@ function autorizarVoto(anoNascimento){//aqui eu valido se a pessoa pode votar ou
         return "obrigatorio"};
 };//usar essa saida pra confimar que posso volar
 let vt2 = autorizarVoto(anoNascimento);
+    if(autorizacao != "negado"){
+let voto= prompt("Em quem deseja votar: ");
 
 let vt3 = votacao(vt2); 
 
-let vt1= prompt("Em quem deseja votar: ");
+
 
 
 function votacao (anoNascimento, voto) {//aqui declaro os votos. essa parte foi feita pela sha.
-    if ( vt2 === 'negado') {
-        console.log('Voce ainda nao pode votar ,espera mais um pouco!!');
-        
-    } else if ( (vt2 === 'opcional' || vt2 === 'obrigatorio') && voto == 1 ) {
+
+       if ( voto == 1 ) {
         gat++;     //colocar a somatoraia aqui
-    } else if ( (vt2 === 'opcional'||  vt2 === 'obrigatorio') && voto == 2 ) {
+    } else if (voto == 2 ) {
         cach++;
-    } else if ( (vt2 === 'opcional' || vt2 === 'obrigatorio') && voto == 3 ) {
+    } else if ( voto == 3 ) {
         pass++;        //colocar o nome da variavel que ganha o voto
-    } else if ( (vt2 === 'opcional'||  vt2 === 'obrigatorio') && voto == 4 ) {
+    } else if ( voto == 4 ) {
         nul++;
-    } else if ( (vt2 === 'opcional' || vt2 === 'obrigatorio') && voto == 5 ) {
+    } else if ( voto == 5 ) {
        branco++; 
     }
 
@@ -77,8 +77,11 @@ votacao (vt2,voto);
 
 console.log("Amen");
 
-var perg = prompt("Quer votar ?[S/N]")
- }while(perg == "S"|| perg == "s");
+var perg = prompt("Quer votar ?[S/N]");
+}else{ 
+    console.log('Voce ainda nao pode votar ,espera mais um pouco!!');
+} 
+}while(perg == "S"|| perg == "s");
  
  let gat = 0;
  let cach = 0;
