@@ -42,11 +42,12 @@ Ter uma função chamada exibirResultados() que deve mostrar: (2,0 pontos)
      }
  
  }
- var gat = 0;
- var cach = 0;
- var pass = 0;
- var nul = 0;
- var branco = 0;
+ var candidato=[
+  gat =0,
+  cach = 0,
+  pass = 0,
+  nul = 0,
+  branco = 0];
  
  console.log(` 
 ==================================================================
@@ -69,15 +70,13 @@ Ter uma função chamada exibirResultados() que deve mostrar: (2,0 pontos)
      
      let autorizacao = "";
      
-let autorizacao = autorizarVoto(anoNascimento);
+autorizacao = autorizarVoto(anoNascimento);
     if(autorizacao != "negado"){
 let voto= prompt("Em quem deseja votar: ");
 
-let vt3 = votacao(autorizacao,voto); 
-
 
  
-votacao (vt2,voto);
+votacao (autorizarVoto,voto);
 
 
 console.log("Amen");
