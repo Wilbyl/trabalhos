@@ -49,3 +49,16 @@ function(){
     console.log("ok");
     }
     ); // o nosso CallBack passa o parametro da função
+
+
+    function testaBreak(x) {
+        var i = 0;
+     
+        while (i < 6) {
+           if (i == 3) {
+              break;
+           }
+           i += 1;
+        }
+        return i * x;
+     }

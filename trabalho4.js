@@ -16,51 +16,74 @@ Ter uma função chamada exibirResultados() que deve mostrar: (2,0 pontos)
  const  prompt=require("prompt-sync")();
 
 
+console.log(` 
+==================================================================
+||||||||| Eleições pra saber qual animal e o mais querido.|||||||||
+|||||||||||||||||| candidato: 1 = Gato       ||||||||||||||||||||||
+|||||||||||||||||| candidato: 2 = Cachorro   ||||||||||||||||||||||
+|||||||||||||||||| candidato: 3 = Furão      ||||||||||||||||||||||
+|||||||||||||||||| nulo: 4 = Anular voto     ||||||||||||||||||||||
+|||||||||||||||||| branco: 5 = branco        ||||||||||||||||||||||
+================================================================== 
+`
+);
+
+
 
  var v1 =0;
 
  do{
-     let ano_us =+prompt("Digite ano de nascimento: ") 
+     let anoNascimento =+prompt("Digite ano de nascimento: ") ;
     let voto=0;
     let autorizacao = "";
 
 function autorizarVoto(anoNascimento){//aqui eu valido se a pessoa pode votar ou nao
-    if(2021-anoNascimento <= 16){
-        return negado;
-    }else if (2021-anoNascimento >=17 || 2021-anoNascimento <=19){
-        return opcional;
-    }else if (obrigatorio);
+    let idade = 2021 - anoNascimento;
+
+    if(idade <= 16){
+        return "negado";
+    }else if ( idade <= 19 ){
+        return "opcional";
+    }else {
+        return "obrigatorio"};
 };//usar essa saida pra confimar que posso volar
+let vt2 = autorizarVoto(anoNascimento);
+
+let vt3 = votacao(vt2); 
+
+let vt1= prompt("Em quem deseja votar: ");
 
 
-
-let vt1= prompt("em quem vc quer votar: ")
-
-
-
-
-function votacao(autorizacao, voto) {//aqui declaro os votos. essa parte foi feita pela sha.
-    if ( autorizacao === 'negado') {
+function votacao (anoNascimento, voto) {//aqui declaro os votos. essa parte foi feita pela sha.
+    if ( vt2 === 'negado') {
         console.log('Voce ainda nao pode votar ,espera mais um pouco!!');
-        console.log();//aqui eu vou gerar os pontos dos votos
-    } else if ( (autorizacao === 'opcional' || autorizacao === 'obrigatorio') && voto == 1 ) {
-        //colocar a somatoraia aqui
-    } else if ( (autorizacao === 'opcional'||  autorizacao === 'obrigatorio') && voto == 2 ) {
         
-    } else if ( (autorizacao === 'opcional' || autorizacao === 'obrigatorio') && voto == 3 ) {
-        //colocar o nome da variavel que ganha o voto
-    } else if ( (autorizacao === 'opcional'||  autorizacao === 'obrigatorio') && voto == 4 ) {
-        
-    } else if ( (autorizacao === 'opcional' || autorizacao === 'obrigatorio') && voto == 5 ) {
-        
+    } else if ( (vt2 === 'opcional' || vt2 === 'obrigatorio') && voto == 1 ) {
+        gat++;     //colocar a somatoraia aqui
+    } else if ( (vt2 === 'opcional'||  vt2 === 'obrigatorio') && voto == 2 ) {
+        cach++;
+    } else if ( (vt2 === 'opcional' || vt2 === 'obrigatorio') && voto == 3 ) {
+        pass++;        //colocar o nome da variavel que ganha o voto
+    } else if ( (vt2 === 'opcional'||  vt2 === 'obrigatorio') && voto == 4 ) {
+        nul++;
+    } else if ( (vt2 === 'opcional' || vt2 === 'obrigatorio') && voto == 5 ) {
+       branco++; 
     }
+
 }
  
+votacao (vt2,voto);
 
 
-
-
-console.log("amen");
+console.log("Amen");
 
 var perg = prompt("Quer votar ?[S/N]")
  }while(perg == "S"|| perg == "s");
+ 
+ let gat = 0;
+ let cach = 0;
+ let pass = 0;
+ let nul = 0;
+ let branco = 0;
+
+ console.log(branco);
