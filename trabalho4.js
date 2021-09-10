@@ -42,7 +42,12 @@ Ter uma função chamada exibirResultados() que deve mostrar: (2,0 pontos)
      }
  
  }
-
+ var gat = 0;
+ var cach = 0;
+ var pass = 0;
+ var nul = 0;
+ var branco = 0;
+ 
  console.log(` 
 ==================================================================
 ||||||||| Eleições pra saber qual animal e o mais querido.|||||||||
@@ -64,13 +69,11 @@ Ter uma função chamada exibirResultados() que deve mostrar: (2,0 pontos)
      
      let autorizacao = "";
      
-let vt2 = autorizarVoto(anoNascimento);
+let autorizacao = autorizarVoto(anoNascimento);
     if(autorizacao != "negado"){
 let voto= prompt("Em quem deseja votar: ");
 
-let vt3 = votacao(vt2); 
-
-
+let vt3 = votacao(autorizacao,voto); 
 
 
  
@@ -85,10 +88,5 @@ var perg = prompt("Quer votar ?[S/N]");
 } 
 }while(perg == "S"|| perg == "s");
  
- let gat = 0;
- let cach = 0;
- let pass = 0;
- let nul = 0;
- let branco = 0;
 
  console.log(branco);
