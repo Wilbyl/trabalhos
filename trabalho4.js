@@ -15,8 +15,35 @@ Ter uma função chamada exibirResultados() que deve mostrar: (2,0 pontos)
 
  const  prompt=require("prompt-sync")();
 
+ 
+ function autorizarVoto(anoNascimento){//aqui eu valido se a pessoa pode votar ou nao
+ let idade = 2021 - anoNascimento;
+ 
+ if(idade <= 16){
+    return "negado";
+ }else if ( idade <= 19 ){
+    return "opcional";
+ }else {
+    return "obrigatorio"};
+ };//usar essa saida pra confimar que posso volar
 
-console.log(` 
+ function votacao (anoNascimento, voto) {//aqui declaro os votos. essa parte foi feita pela sha.
+ 
+        if ( voto == 1 ) {
+         gat++;     //colocar a somatoraia aqui
+     } else if (voto == 2 ) {
+         cach++;
+     } else if ( voto == 3 ) {
+         pass++;        //colocar o nome da variavel que ganha o voto
+     } else if ( voto == 4 ) {
+         nul++;
+     } else if ( voto == 5 ) {
+        branco++; 
+     }
+ 
+ }
+
+ console.log(` 
 ==================================================================
 ||||||||| Eleições pra saber qual animal e o mais querido.|||||||||
 |||||||||||||||||| candidato: 1 = Gato       ||||||||||||||||||||||
@@ -34,19 +61,9 @@ console.log(`
 
  do{
      let anoNascimento =+prompt("Digite ano de nascimento: ") ;
-
-    let autorizacao = "";
-
-function autorizarVoto(anoNascimento){//aqui eu valido se a pessoa pode votar ou nao
-    let idade = 2021 - anoNascimento;
-
-    if(idade <= 16){
-        return "negado";
-    }else if ( idade <= 19 ){
-        return "opcional";
-    }else {
-        return "obrigatorio"};
-};//usar essa saida pra confimar que posso volar
+     
+     let autorizacao = "";
+     
 let vt2 = autorizarVoto(anoNascimento);
     if(autorizacao != "negado"){
 let voto= prompt("Em quem deseja votar: ");
@@ -56,21 +73,6 @@ let vt3 = votacao(vt2);
 
 
 
-function votacao (anoNascimento, voto) {//aqui declaro os votos. essa parte foi feita pela sha.
-
-       if ( voto == 1 ) {
-        gat++;     //colocar a somatoraia aqui
-    } else if (voto == 2 ) {
-        cach++;
-    } else if ( voto == 3 ) {
-        pass++;        //colocar o nome da variavel que ganha o voto
-    } else if ( voto == 4 ) {
-        nul++;
-    } else if ( voto == 5 ) {
-       branco++; 
-    }
-
-}
  
 votacao (vt2,voto);
 
