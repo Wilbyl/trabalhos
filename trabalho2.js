@@ -47,12 +47,12 @@ while (GO==="S" || GO==="s" ){
     console.log ("Você perdeu");
     } else if (computador === 1 && v2===0){l1= l1+1
     console.log("Você perdeu");
-    }else { computador === v2
+    }else { computador === v2;
     console.log("Empate");
     }
    
     --v1
-    console.log(v1)
+    console.log(v1);
     
     }
 

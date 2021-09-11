@@ -23,3 +23,26 @@ const  prompt=require("prompt-sync")();
  console.log("****************************************************************"); 
  console.log("**************************Boa sorte***************************");
  console.log("****************************************************************");
+console.log();
+console.log();
+console.log();
+console.log("preparar");
+console.log("vai");
+    
+do{ var perg = prompt("quer jogar?[S/N] ");
+var aleatorio = [1, 2, 3];
+var computador = aleatorio[Math.floor(Math.random() * aleatorio.length)];
+
+
+var jogador= prompt("escolha um numero: ");
+
+console.log(computador);
+
+if(computador == jogador){
+    console.log("ganhou");
+}else if(computador != jogador){
+    console.log("perdeu");
+}
+
+
+} while ( perg == "S" || perg =="s" );
