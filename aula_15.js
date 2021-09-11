@@ -45,8 +45,8 @@ function enviarEmail(corpo,para, callback){
 
 enviarEmail("Parabens vc ganhou um desconto de 10% ","nao gaste atoa",
 function(){
-    console.log("inicio do Email ");
-    console.log("ok");
+    console.log(" Email enviado ");
+    console.log("tudo ok");
     }
     ); // o nosso CallBack passa o parametro da função
 

@@ -54,7 +54,7 @@ Ter uma função chamada exibirResultados() que deve mostrar: (2,0 pontos)
      } else if ( voto == 5 ) {
         candidato.branco++; 
      }
- 
+ console.log("ERRO")
  }
  var candidato={
   gat :0,
@@ -69,7 +69,7 @@ Ter uma função chamada exibirResultados() que deve mostrar: (2,0 pontos)
 ||||||||| Eleições pra saber qual animal e o mais querido.|||||||||
 |||||||||||||||||| candidato: 1 = Gato       ||||||||||||||||||||||
 |||||||||||||||||| candidato: 2 = Cachorro   ||||||||||||||||||||||
-|||||||||||||||||| candidato: 3 = Furão      ||||||||||||||||||||||
+|||||||||||||||||| candidato: 3 = Passado    ||||||||||||||||||||||
 |||||||||||||||||| nulo: 4 = Anular voto     ||||||||||||||||||||||
 |||||||||||||||||| branco: 5 = branco        ||||||||||||||||||||||
 ================================================================== 
@@ -91,7 +91,7 @@ votacao (autorizarVoto,voto);
 
 
 
-console.log("Amen");
+console.log("ERRO");
 
 var perg = prompt("Quer votar ?[S/N]");
 }else{ 
