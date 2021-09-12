@@ -42,6 +42,7 @@ if(computador == jogador){
     console.log("ganhou");
 }else if(computador != jogador){
     console.log("perdeu");
+    
 }
 
 
