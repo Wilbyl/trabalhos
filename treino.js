@@ -7,19 +7,20 @@ for(corre of lista ){
     console.log (`lista de numeros ${corre}`)
 }
 */
-
-
-
-     var timer = [60 , 1 , 60];
-    setInterval(function () {
-        minutes = parseInt(timer / 60, 10);
-        seconds = parseInt(timer % 60, 10);
-        minutes = minutes < 10 ? "0" + minutes : minutes;
-        seconds = seconds < 10 ? "0" + seconds : seconds;
-        
-        if (--timer < 0) {
-            timer = duration;
-        }
-    }, 1000);
+function sleep (ms) {
+    return new Promise (resolve => setTimeout (resolve,ms));
 }
-startTimer();
+async function demo(){
+    console.log("Espere...");
+    await sleep (2000);
+    console.log("2 segundos ");
+
+// sloop em loop
+
+for (let i=0 ; i<5 ; i++){
+    if (i ===3 )
+     await sleep(2000);
+    console.log(i); 
+ }
+}
+demo(); 
