@@ -54,7 +54,7 @@ Ter uma função chamada exibirResultados() que deve mostrar: (2,0 pontos)
      } else if ( voto == 5 ) {
         candidato.branco++; 
      }
- console.log("ERRO")
+ console.log("ERRO");
  }
  var candidato={
   gat :0,
@@ -84,12 +84,8 @@ Ter uma função chamada exibirResultados() que deve mostrar: (2,0 pontos)
 autorizacao = autorizarVoto(anoNascimento);
     if(autorizacao != "negado"){
 let voto= prompt("Em quem deseja votar: ");
-
-
  
 votacao (autorizarVoto,voto);
-
-
 
 console.log("ERRO");
 
@@ -99,5 +95,4 @@ var perg = prompt("Quer votar ?[S/N]");
 } 
 }while(perg == "S"|| perg == "s");
  
-
 exibirResultados();

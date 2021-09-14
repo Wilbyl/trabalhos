@@ -63,13 +63,13 @@ while (GO==="S" || GO==="s" ){
     ;
       
   
-  } while (v1>0)
+  } while (v1>0);
   if(w1>l1){ 
       console.log("Quero revanche");
   } else if (w1<l1) { 
       console.log("Vai virar fregues?");
   } else console.log("Vamos pra melhor de 3 ?");
-  console.log()
+  console.log();
     GO = prompt("Quer jogar de novo ?[S/N]")
 
 }if (GO==="N" || GO==="n")
