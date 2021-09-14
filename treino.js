@@ -25,8 +25,8 @@ for (let i=0 ; i<=10 ; i++){
 }
 demo(); */
 
-/*
-var aleatorio = [1, 2, 3]; // usar um whie tru pra poder ger um contador de acerto e usar um if pra dizer que o usuario tiver um numero x de acerto ele parar.
+
+var aleatorio = [1, 2, 3]; // usar um while tru pra poder ger um contador de acerto e usar um if pra dizer que o usuario tiver um numero x de acerto ele parar.
 var computador = aleatorio[Math.floor(Math.random() * aleatorio.length)];
 
 //
@@ -50,7 +50,7 @@ for (let i=0 ; i<=5 ; i++){
 }
  }
   }
-demo();*/
+demo();
 
 /*console.log("ola mundo\n") ; 
 setTimeout(function() { console.clear(); },4000);
@@ -118,15 +118,11 @@ if(loop2() < b){
     loop2();
   }*/
   
-setTimeout(() => { console.log("ola"); }, 2000);
-setTimeout(() => { console.log("tudo bem"); }, 4000);
-setTimeout(() => { console.log("vamos brincar"); }, 6000);
-setTimeout(() => { console.log("nao me conhece "); }, 8000);
-setTimeout(() => { console.log("sou seu amigo"); }, 10000);
-setTimeout(() => { console.clear(); }, 12000);
-setTimeout(() => { console.log("vim te ver"); }, 14000);
-setTimeout(() => { console.log("olhe para traz"); }, 16000);
-setTimeout(() => { console.log("nao esta me vendo"); }, 18000);
-setTimeout(() => { console.log("vou mecher na cama  "); }, 20000);
-setTimeout(() => { console.log("olha só"); }, 22000);
-setTimeout(() => { console.clear(); }, 24000);
+/*
+setTimeout(() => { console.clear(); 
+console.log(`Ao avistarmos o castelo nosso corpo é tomado de uma grande sensação de aventura. 
+O que este lugar nos reserva?`);
+
+console.log(); },
+4 * 1000
+);*/
