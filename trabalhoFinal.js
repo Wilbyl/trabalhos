@@ -13,6 +13,17 @@ específico com relação as escolhas que precisam ser feitas, para que seu jogo
 seja divertido!*/
 const  prompt=require("prompt-sync")();
 
+
+
+ function gerador(tamanho) {
+    var stringAleatoria = '';
+    var caracteres = 'asd123';
+    for (var i = 0; i < tamanho; i++) {
+        stringAleatoria += caracteres.charAt(Math.floor(Math.random() * caracteres.length));
+    }
+    return stringAleatoria;
+}
+
 function sleep(delay) {
     var start = new Date().getTime();
     while (new Date().getTime() < start + delay);
@@ -21,10 +32,10 @@ console.clear();
     console.log(`*******************************************************************************
 ******Bem vindo a historia que pode mudar um pouco sua forma de ver o mundo****
 ******************************************************************************* `);
-    sleep(5000);
+    sleep(2000);
 console.clear();
     console.log("\nTudo começou quando um gatoro na adolecencia,nao aguentava mais as dificuldades do mundo...");
-    sleep(5000);
+    sleep(2000);
     
 
     
@@ -35,7 +46,7 @@ console.clear();
     
     
     
-    
+   /* 
     class Inimigo {
         constructor(nome,duracao){
             this.nome = (nome);
@@ -145,12 +156,22 @@ console.clear();
         boss.dados();
 
         sleep(5000);
-        console.clear();
-  //do{ 
-
-  //  var aleatorio = [1, 2, 3];
-  //  var computador = aleatorio[Math.floor(Math.random() * aleatorio.length)];
-
+        console.clear();*/
+  do{ 
+    var goblin1= gerador(3);
     
-//}
-//} while ( perg == "S" || perg =="s" );
+    console.log(goblin1);
+    sleep(2000);
+    console.clear();
+    let jogador= prompt("Digite a sequência anterior:");
+
+if(goblin1 == jogador ){
+  console.log("ganhador");
+  }else if(
+    console.log("perdeu")
+  );
+
+
+var perg = prompt("Quer jogar de novo ?[S/N]");
+
+} while ( perg == "S" || perg =="s" );

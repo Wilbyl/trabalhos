@@ -66,7 +66,7 @@ Ter uma função chamada exibirResultados() que deve mostrar: (2,0 pontos)
  
  console.log(` 
 ==================================================================
-||||||||| Eleições pra saber qual animal e o mais querido.|||||||||
+||||||||| Eleições pra saber qual animal é o mais querido.|||||||||
 |||||||||||||||||| candidato: 1 = Gato       ||||||||||||||||||||||
 |||||||||||||||||| candidato: 2 = Cachorro   ||||||||||||||||||||||
 |||||||||||||||||| candidato: 3 = Passado    ||||||||||||||||||||||
