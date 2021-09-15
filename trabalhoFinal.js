@@ -11,40 +11,42 @@ e condicionais (if, elif, else), ou seja todo o conteúdo visto durante o módul
 Use toda sua criatividade para desenvolver uma história interessante e seja bem
 específico com relação as escolhas que precisam ser feitas, para que seu jogo
 seja divertido!*/
-const  prompt=require("prompt-sync")();
+const prompt = require("prompt-sync")();
 
 var f1 = 5;
 var f2 = 7;
 var f3 = 8;
 var f4 = 10;
-var f5 =10;
+var f5 = 10;
 var contador = 0;
- function gerador(tamanho) {
-    var stringAleatoria = '';
-    var caracteres = 'asd123';
-    for (var i = 0; i < tamanho; i++) {
-        stringAleatoria += caracteres.charAt(Math.floor(Math.random() * caracteres.length));
-    }
-    return stringAleatoria;
+function gerador(tamanho) {
+  var stringAleatoria = "";
+  var caracteres = "asd123";
+  for (var i = 0; i < tamanho; i++) {
+    stringAleatoria += caracteres.charAt(
+      Math.floor(Math.random() * caracteres.length)
+    );
+  }
+  return stringAleatoria;
 }
 
-
 function sleep(delay) {
-    var start = new Date().getTime();
-    while (new Date().getTime() < start + delay);
-  }
-    console.clear();
-    console.log(`*******************************************************************************
+  var start = new Date().getTime();
+  while (new Date().getTime() < start + delay);
+}
+console.clear();
+console.log(`*******************************************************************************
 ******Bem vindo a historia que pode mudar um pouco sua forma de ver o mundo****
 ******************************************************************************* `);
-    sleep(2000);
-    console.clear();
-    console.log("\nTudo começou quando um gatoro na adolecencia,nao aguentava mais as dificuldades do mundo...");
-    sleep(2000);
-    console.clear();
-    
+sleep(2000);
+console.clear();
+console.log(
+  "\nTudo começou quando um gatoro na adolecencia,nao aguentava mais as dificuldades do mundo..."
+);
+sleep(2000);
+console.clear();
 
-   /* 
+/* 
     class Inimigo {
         constructor(nome,duracao){
             this.nome = (nome);
@@ -155,58 +157,57 @@ function sleep(delay) {
 
         sleep(5000);
         console.clear();*/
-do{ 
+do {
   um();
-    function um (){
-    for(var i=0 ; i < f1; i++ ){
-    var goblin1= gerador(5);
-    console.log("memorize o codigo a baixo ");
-    console.log(goblin1);
-    sleep(3000);
-    console.clear();
-    console.log();
-    let jogador= prompt("Digite a sequência anterior:");
+  function um() {
+    for (var i = 0; i < f1; i++) {
+      var goblin1 = gerador(5);
+      console.log("memorize o codigo a baixo ");
+      console.log(goblin1);
+      sleep(3000);
+      console.clear();
+      console.log();
+      let jogador = prompt("Digite a sequência anterior:");
 
-if(goblin1 == jogador ){
-  console.clear();
-  contador++;
-  console.log("Acertou!!");
-  }else if(goblin1 != jogador){
-    console.clear();
-    console.log("perdeu");
-}
-
-  }--f1;
-  if (contador == 4){
-dois();
-}
+      if (goblin1 == jogador) {
+        console.clear();
+        contador++;
+        console.log("Acertou!!");
+      } else if (goblin1 != jogador) {
+        console.clear();
+        console.log("perdeu");
+      }
+    }
+    --f1;
+    if (contador == 4) {
+      dois();
+    }
   }
+  function dois() {
+    for (var i = 0; i < f2; i++) {
+      var elfo1 = gerador(6);
+      console.log("memorize o codigo a baixo ");
+      console.log(elfo1);
+      sleep(3000);
+      console.clear();
+      console.log();
+      let jogador = prompt("Digite a sequência anterior:");
 
-  function dois (){
-    for(var i=0 ; i < f2; i++ ){
-    var elfo1= gerador(6);
-    console.log("memorize o codigo a baixo ");
-    console.log(elfo1);
-    sleep(3000);
-    console.clear();
-    console.log();
-    let jogador= prompt("Digite a sequência anterior:");
-
-if(elfo1 == jogador ){
-  console.log("Acertou!!");
-  contador++;
-console.clear();
-  }else if(elfo1 != jogador){
-    console.log("perdeu");
-    contador--;
-  console.clear();
-}
-
-  }--f2;
-  if (contador == 6){
-console.log ("conseguiu");
-}
+      if (elfo1 == jogador) {
+        console.log("Acertou!!");
+        contador++;
+        console.clear();
+      } else if (elfo1 != jogador) {
+        console.log("perdeu");
+        contador--;
+        console.clear();
+      }
+    }
+    --f2;
+    if (contador == 6) {
+      console.log("conseguiu");
+    }
   }
-console.log("GAMO OVER");
-var perg = prompt("Quer jogar de novo ?[S/N]");
-} while ( perg == "S" || perg =="s" );
+  console.log("GAMO OVER");
+  var perg = prompt("Quer jogar de novo ?[S/N]");
+} while (perg == "S" || perg == "s");
