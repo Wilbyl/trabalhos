@@ -340,17 +340,49 @@ do {
       }
     }
     if (contador >= 6) {
-      console.log("Dylan decide enfrentar seu pai, ele segura seus braços e grita 'Dessa vez não, dessa vez eu decidi que vou me aceitar, eu vou me amar e vou ser quem eu sou, se você não pode me amar também, eu serei suficiente" );
+      console.log(
+        "Dylan decide enfrentar seu pai, ele segura seus braços e grita 'Dessa vez não, dessa vez eu decidi que vou me aceitar, eu vou me amar e vou ser quem eu sou, se você não pode me amar também, eu serei suficiente"
+      );
       sleep(2000);
       console.clear();
 
-      console.log("Seus pais dão um sorriso de alívio e desaparecem, deixando Dylan totalmente desnorteado, e ele acaba desmaiando novamente.");
+      console.log(
+        "Seus pais dão um sorriso de alívio e desaparecem, deixando Dylan totalmente desnorteado, e ele acaba desmaiando novamente."
+      );
       sleep(2000);
       console.clear();
 
-      console.log("");
-sleep(2000);
-console.clear();
+      console.log(
+        "Quando ele acorda novamente, já não estava mais naquela floresta, dessa vez estava em uma cabana bem aconchegante com cheiro de casa antiga e defumador."
+      );
+      sleep(2000);
+      console.clear();
+
+      console.log(
+        "Um homem entrou na cabana todo vestido em ouro com uma mulher ao seu lado, e o olhou de cima a baixo."
+      );
+      sleep(2000);
+      console.clear();
+
+      console.log("- Foi ISSO que minha filha salvou? ");
+      sleep(2000);
+      console.clear();
+
+      console.log(
+        "- Sim senhor. - respondeu a mulher pequena de cabelos curtos, olhando para baixo, como se tivesse medo da própria voz"
+      );
+      sleep(2000);
+      console.clear();
+
+      console.log(
+        "Ele não merece a misericórdia, veja sua vestimenta de mendigo, o homem nem sequer porta um anel de ouro. - ele bufou e tirou dardos dos bolsos de ouro que ficavam em sua cintura - eu darei um fim nesse imundo aqui mesmo, para que o povo não precise ver tamanha imundice. "
+      );
+      sleep(4000);
+      console.clear();
+
+      console.log("Ele atira os dardos e Dylan os rebate com sua espada. ");
+      sleep(2000);
+      console.clear();
 
       quatro();
     }
@@ -376,8 +408,27 @@ console.clear();
         console.clear();
       }
     }
-    if (contador >= 6) {
-      console.log("conseguiu");
+    if (contador >= 8) {
+      console.log(
+        "Dylan acha o ponto fraco do seu aliado, o pescoço que estava de fora de toda aquela roupa que mais parecia uma armadura, e arranca a cabeça do homem de uma só vez."
+      );
+      sleep(2000);
+      console.clear();
+
+      console.log("");
+      sleep(2000);
+      console.clear();
+      console.log("");
+      sleep(2000);
+      console.clear();
+      console.log("");
+      sleep(2000);
+      console.clear();
+
+      console.log("");
+      sleep(2000);
+      console.clear();
+      cinco();
     }
   }
 
@@ -401,7 +452,7 @@ console.clear();
         console.clear();
       }
     }
-    if (contador >= 6) {
+    if (contador >= 9) {
       console.log("conseguiu");
     }
   }
@@ -411,3 +462,7 @@ console.clear();
     "Dylan morre e retorna à praça. O senhor ao seu lado balança a cabeça e pergunta quer tentar novamente? [S/N]"
   );
 } while (perg == "S" || perg == "s");
+
+console.log("");
+sleep(2000);
+console.clear();
