@@ -36,6 +36,7 @@ console.clear();
 console.clear();
     console.log("\nTudo começou quando um gatoro na adolecencia,nao aguentava mais as dificuldades do mundo...");
     sleep(2000);
+    console.clear();
     
 
     
@@ -158,10 +159,10 @@ console.clear();
         sleep(5000);
         console.clear();*/
   do{ 
-    var goblin1= gerador(3);
+    var goblin1= gerador(5);
     
     console.log(goblin1);
-    sleep(2000);
+    sleep(3000);
     console.clear();
     let jogador= prompt("Digite a sequência anterior:");
 
