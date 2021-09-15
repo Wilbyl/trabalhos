@@ -41,8 +41,54 @@ console.log(`*******************************************************************
 sleep(2000);
 console.clear();
 console.log(
-  "\nTudo começou quando um gatoro na adolecencia,nao aguentava mais as dificuldades do mundo..."
+  "\nNão era de costume dele, mas nessa manhã, Dylan resolveu fazer uma caminhada pela praça e pensar sobre seus problemas."
 );
+sleep(2000);
+console.clear();
+
+console.log("\nChegando lá, se sentou em um banco e se perguntou porque sua vida era tão difícil. Porque ele não conseguia se dar bem com seus pais? Porque todos os seus colegas da escola implicavam com ele? Porque ele simplesmente não conseguia ser feliz e viver uma vida tranquila? ")
+sleep(4000);
+console.clear();
+
+
+console.log("\nFoi quando ele pensou que talvez seu lugar não fosse ali, que ao lado dele se sentou um senhor. Ele era baixo, de aparência ruim, mas com um belo sorriso ele perguntou.");
+sleep(3000);
+console.clear();
+
+
+
+console.log("\n- Filho, você quer saber a solução para a sua vida? Pegue esta moeda. - ele estendeu a mão e nela tinha uma pequena moeda quadrada de cobre.");
+sleep(2000);
+console.clear();
+
+
+
+console.log("Dylan sem pensar duas vezes pegou a moeda, e então tudo ao seu redor escureceu");
+sleep(2000);
+console.clear();
+
+console.log("\n Assim que seus olhos recuperaram a luz, Dylan teve o vislumbre de uma linda floresta, ele se levantou e deu uma olhada ao derredor. Ele estava cada vez mais encantado, quando de repente uma flecha passa de raspão pelo seu braço. ");
+sleep(4000);
+console.clear();
+
+console.log("\nQuando ele se virou, viu uma criatura humanoide, ele era todo azul, com partes verdes e algo esbranquiçado corria pelo seu corpo, se aquela criatura fosse um pouco mais redonda ele poderia afirmar que o planeta Terra estava bem em sua frente.");
+sleep(3000);
+console.clear();
+
+
+
+
+console.log("A criatura saiu correndo em direção a Dylan e se ele não tivesse se esquivando teria recebido um soco, mais um soco foi desferido e dessa vez o acertou em sua barriga. ");
+sleep(2000);
+console.clear();
+
+
+console.log("Ele cai de frente se perguntando porque aquilo estava acontecendo, e quando ele se deu conta, em sua cintura havia uma espada, ele a pegou e partiu pra cima da criatura.");
+sleep(2000);
+console.clear();
+
+
+console.log("");
 sleep(2000);
 console.clear();
 
@@ -285,5 +331,5 @@ do {
   }
 
   console.log("GAMO OVER");
-  var perg = prompt("Quer jogar de novo ?[S/N]");
+  var perg = prompt("Dylan morre e retorna à praça. O senhor ao seu lado balança a cabeça e pergunta quer tentar novamente? [S/N]");
 } while (perg == "S" || perg == "s");
