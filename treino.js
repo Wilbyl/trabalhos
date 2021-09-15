@@ -146,3 +146,37 @@ function sleep(delay) {
   var start = new Date().getTime();
   while (new Date().getTime() < start + delay);
 }
+ class Inimigo {
+  constructor(nome){
+      this.nome = (nome);
+  }
+}
+
+class Goblin extends Inimigo{
+  constructor(nome,forca){ 
+      super(nome);
+
+      this.forca = forca;
+      this.espada = false;
+  }
+
+  dados(){
+      console.log(`
+      O inimigo ${this.nome} tem:
+      Força: ${this.forca}
+      Espada: ${this.espada}
+      `);
+  }
+
+  pegaespada(){
+      this.espada = true;
+      console.log("Você pegou a espada!!!");
+  }
+}
+let goblin = new Goblin("Goblin", 100);
+
+goblin.dados();
+
+goblin.pegaespada();
+
+goblin.dados();

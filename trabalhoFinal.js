@@ -17,31 +17,140 @@ function sleep(delay) {
     var start = new Date().getTime();
     while (new Date().getTime() < start + delay);
   }
-console.log("")
+console.clear();
+    console.log(`*******************************************************************************
+******Bem vindo a historia que pode mudar um pouco sua forma de ver o mundo****
+******************************************************************************* `);
+    sleep(5000);
+console.clear();
+    console.log("\nTudo começou quando um gatoro na adolecencia,nao aguentava mais as dificuldades do mundo...");
+    sleep(5000);
     
 
-
-
-
-
-
-
-  do{ 
-
-    var aleatorio = [1, 2, 3];
-    var computador = aleatorio[Math.floor(Math.random() * aleatorio.length)];
-
-
-    var jogador= prompt("escolha um numero: ");
-
-console.log(computador);
-
-if(computador == jogador){
-    console.log("ganhou");
-}else if(computador != jogador){
-    console.log("perdeu");
     
-}
+    
+    
+    
+    
+    
+    
+    
+    
+    class Inimigo {
+        constructor(nome,duracao){
+            this.nome = (nome);
+            this.duracao = (duracao);
+        }
+      }
+      
+      class Goblin extends Inimigo{
+        constructor(nome){ 
+            super(nome);
+            this.duracao= 5;
+            this.status = 5;
+            
+        }
+        dados(){
+            console.log(`
+            O inimigo ${this.nome}
+            duratao: ${this.duracao}
+            `);
+        }
+      
+      
+      }
+      let goblin = new Goblin("Goblin", 5);
+    
+      goblin.dados();
+      
+      
+      class Elfo extends Inimigo{
+        constructor(nome){ 
+            super(nome);
+            this.duracao= 8;
+            
+            
+        }
+        dados(){
+            console.log(`
+            O inimigo ${this.nome}
+            duratao: ${this.duracao}
+            `);
+        }
+      
+      
+      }
+      let elfo = new Elfo("Elfo",8 );
 
+      class Orc extends Inimigo{
+        constructor(nome){ 
+            super(nome);
+            this.duracao= 12;
+            
+            
+        }
+        dados(){
+            console.log(`
+            O inimigo ${this.nome}
+            duratao: ${this.duracao}
+            `);
+        }
+      
+      
+      }
+      let orc = new Orc("Orc",12 );
+    
 
-} while ( perg == "S" || perg =="s" );
+      class Cerbero extends Inimigo{
+        constructor(nome){ 
+            super(nome);
+            this.duracao= 16;
+            
+            
+        }
+        dados(){
+            console.log(`
+            O inimigo ${this.nome}
+            duratao: ${this.duracao}
+            `);
+        }
+      
+      
+      }
+      let cerbero = new Cerbero("Cerbero",16 );
+
+        
+      class Boss extends Inimigo{
+        constructor(nome){ 
+            super(nome);
+            this.duracao= 18;
+            
+            
+        }
+        dados(){
+            console.log(`
+            O inimigo ${this.nome}
+            duratao: ${this.duracao}
+            `);
+        }
+      
+      
+      }
+      let boss = new Boss("Orc",18 );
+      
+        goblin.dados();
+        elfo.dados();
+        orc.dados();
+        cerbero.dados();
+        boss.dados();
+
+        sleep(5000);
+        console.clear();
+  //do{ 
+
+  //  var aleatorio = [1, 2, 3];
+  //  var computador = aleatorio[Math.floor(Math.random() * aleatorio.length)];
+
+    
+//}
+//} while ( perg == "S" || perg =="s" );
