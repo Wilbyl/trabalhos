@@ -1,5 +1,5 @@
 const prompt = require("prompt-sync")();
-
+/*
 let v1= prompt ("digite seu numero:");
 
 let lista =[v1];
@@ -141,7 +141,7 @@ console.log(); },
 
 // usar uma funçao que faca um texto aleatorio,depois de um certo tempo o texto some e a pessoa precisa fazer o texto igual ,quando ele ganhar vai para o proximo oponente ,mas antes ele vai exibir mais uma parte da historia
 
-
+/*
 function sleep(delay) {
   var start = new Date().getTime();
   while (new Date().getTime() < start + delay);
@@ -179,4 +179,37 @@ goblin.dados();
 
 goblin.pegaespada();
 
-goblin.dados();
+goblin.dados();*/
+
+
+
+let contador = 0;
+
+function um(){
+  let perg1 = prompt("vc quer comer?");
+  if(perg1 === "sim"){
+    dois();
+  }else{
+    tres();
+  }
+}
+function dois(){
+  console.log("muito bem, que tal comer mais?");
+contador++;
+tres();
+}
+function tres(){
+  if(contador < 5){
+    console.log("Você precisa comer mais");
+    um();
+  }else if(contador > 4){
+    exit();
+  }
+}
+
+function exit(){
+  console.log("Voce esta de barriga cheia, continue sua aventura");
+}
+
+um()
+
