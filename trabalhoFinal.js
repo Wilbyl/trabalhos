@@ -159,7 +159,7 @@ console.clear();
         console.clear();*/
 do {
   um();
-  function um() {
+  function um() { contado=0
     for (var i = 0; i < f1; i++) {
       var goblin1 = gerador(5);
       console.log("memorize o codigo a baixo ");
@@ -177,8 +177,8 @@ do {
         console.clear();
         console.log("perdeu");
       }
+      --f1;
     }
-    --f1;
     if (contador == 4) {
       dois();
     }
