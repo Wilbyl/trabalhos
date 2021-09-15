@@ -159,12 +159,12 @@ console.clear();
         console.clear();*/
 do {
   um();
-  function um() { contado=0
+  function um() {
     for (var i = 0; i < f1; i++) {
       var goblin1 = gerador(5);
       console.log("memorize o codigo a baixo ");
       console.log(goblin1);
-      sleep(3000);
+      sleep(4000);
       console.clear();
       console.log();
       let jogador = prompt("Digite a sequência anterior:");
@@ -177,12 +177,13 @@ do {
         console.clear();
         console.log("perdeu");
       }
-      --f1;
     }
-    if (contador == 4) {
+    if (contador >= 4) {
       dois();
     }
   }
+
+  contado = 0;
   function dois() {
     for (var i = 0; i < f2; i++) {
       var elfo1 = gerador(6);
@@ -199,15 +200,90 @@ do {
         console.clear();
       } else if (elfo1 != jogador) {
         console.log("perdeu");
+
+        console.clear();
+      }
+    }
+    if (contador >= 6) {
+      tres();
+    }
+  }
+
+  function tres() {
+    for (var i = 0; i < f3; i++) {
+      var orc1 = gerador(6);
+      console.log("memorize o codigo a baixo ");
+      console.log(orc1);
+      sleep(2000);
+      console.clear();
+      console.log();
+      let jogador = prompt("Digite a sequência anterior:");
+
+      if (orc1 == jogador) {
+        console.log("Acertou!!");
+        contador++;
+        console.clear();
+      } else if (orc1 != jogador) {
+        console.log("perdeu");
+
+        console.clear();
+      }
+    }
+    if (contador >= 6) {
+      quatro();
+    }
+  }
+
+  function quatro() {
+    for (var i = 0; i < f4; i++) {
+      var cebero1 = gerador(6);
+      console.log("memorize o codigo a baixo ");
+      console.log(cebero1);
+      sleep(3000);
+      console.clear();
+      console.log();
+      let jogador = prompt("Digite a sequência anterior:");
+
+      if (cebero1 == jogador) {
+        console.log("Acertou!!");
+        contador++;
+        console.clear();
+      } else if (cebero1 != jogador) {
+        console.log("perdeu");
+
+        console.clear();
+      }
+    }
+    if (contador >= 6) {
+      console.log("conseguiu");
+    }
+  }
+
+  function cinco() {
+    for (var i = 0; i < f5; i++) {
+      var boss1 = gerador(6);
+      console.log("memorize o codigo a baixo ");
+      console.log(boss1);
+      sleep(3000);
+      console.clear();
+      console.log();
+      let jogador = prompt("Digite a sequência anterior:");
+
+      if (boss1 == jogador) {
+        console.log("Acertou!!");
+        contador++;
+        console.clear();
+      } else if (boss1 != jogador) {
+        console.log("perdeu");
         contador--;
         console.clear();
       }
     }
-    --f2;
-    if (contador == 6) {
+    if (contador >= 6) {
       console.log("conseguiu");
     }
   }
+
   console.log("GAMO OVER");
   var perg = prompt("Quer jogar de novo ?[S/N]");
 } while (perg == "S" || perg == "s");
