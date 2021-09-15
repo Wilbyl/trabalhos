@@ -11,30 +11,28 @@ e condicionais (if, elif, else), ou seja todo o conteúdo visto durante o módul
 Use toda sua criatividade para desenvolver uma história interessante e seja bem
 específico com relação as escolhas que precisam ser feitas, para que seu jogo
 seja divertido!*/
-
 const  prompt=require("prompt-sync")();
 
-
- console.log("***************Bem vindo ao game do Soren***************");
- console.log("****************************************************************");
- console.log("é uma simples e custa historia, você precisa ganha cada monstro ate chegar no Boss...");
- console.log("****************************************************************");
- console.log("Você tem apenas uma vida ,mas a cada nv vc ganha status pra ganhar o proximo monstro.");
- console.log("****************************************************************"); 
- console.log("**************************Boa sorte***************************");
- console.log("****************************************************************");
-console.log();
-console.log();
-console.log();
-console.log("preparar");
-console.log("vai");
+function sleep(delay) {
+    var start = new Date().getTime();
+    while (new Date().getTime() < start + delay);
+  }
+console.log("")
     
-do{ var perg = prompt("quer jogar?[S/N] ");
-var aleatorio = [1, 2, 3];
-var computador = aleatorio[Math.floor(Math.random() * aleatorio.length)];
 
 
-var jogador= prompt("escolha um numero: ");
+
+
+
+
+
+  do{ 
+
+    var aleatorio = [1, 2, 3];
+    var computador = aleatorio[Math.floor(Math.random() * aleatorio.length)];
+
+
+    var jogador= prompt("escolha um numero: ");
 
 console.log(computador);
 

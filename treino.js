@@ -1,13 +1,13 @@
 const prompt = require("prompt-sync")();
 
-/*let v1= prompt ("digite seu numero:");
+let v1= prompt ("digite seu numero:");
 
 let lista =[v1];
 for(corre of lista ){
     console.log (`lista de numeros ${corre}`)
 }
-*/
-/*function sleep (ms) {
+
+function sleep (ms) {
     return new Promise (resolve => setTimeout (resolve,ms));
 }
 async function demo(){
@@ -23,9 +23,9 @@ for (let i=0 ; i<=10 ; i++){
     console.log(i); 
  }
 }
-demo(); */
-
-
+demo(); 
+*/
+/*
 var aleatorio = [1, 2, 3]; // usar um while tru pra poder ger um contador de acerto e usar um if pra dizer que o usuario tiver um numero x de acerto ele parar.
 var computador = aleatorio[Math.floor(Math.random() * aleatorio.length)];
 
@@ -40,7 +40,7 @@ async function demo(){
     
 // sloop em loop
 
-for (let i=0 ; i<=5 ; i++){
+for (let i=0 ; i<=2 ; i++){
     if (computador === nome ){
      await sleep(2000);
     console.log(i);
@@ -51,15 +51,18 @@ for (let i=0 ; i<=5 ; i++){
  }
   }
 demo();
+*/
 
-/*console.log("ola mundo\n") ; 
+/*
+console.log("ola mundo\n") ; 
 setTimeout(function() { console.clear(); },4000);
 
 console.log( "cabeça") ; 
-setTimeout(function() { console.clear(); },5000);*/
+setTimeout(function() { console.clear(); },5000);
+*/
 
-
-/*console.log("Inicio da sua historia aqui:");
+/*
+console.log("Inicio da sua historia aqui:");
 
 let first = +prompt("primeira escolha do jogo aqui 1 ou 2:");
 
@@ -116,13 +119,30 @@ let b = 2;
 
 if(loop2() < b){
     loop2();
-  }*/
-  
-/*
+  }
+  */
+
+  /*
 setTimeout(() => { console.clear(); 
 console.log(`Ao avistarmos o castelo nosso corpo é tomado de uma grande sensação de aventura. 
 O que este lugar nos reserva?`);
 
 console.log(); },
 4 * 1000
-);*/
+);
+*/
+/*process.stdin.on('keypress', (str, key) => {
+
+  if (key.name === 'c') {
+    console.log(`You pressed the "${str}" key`);
+  }
+});*/
+
+
+// usar uma funçao que faca um texto aleatorio,depois de um certo tempo o texto some e a pessoa precisa fazer o texto igual ,quando ele ganhar vai para o proximo oponente ,mas antes ele vai exibir mais uma parte da historia
+
+
+function sleep(delay) {
+  var start = new Date().getTime();
+  while (new Date().getTime() < start + delay);
+}
