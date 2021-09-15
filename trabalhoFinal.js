@@ -68,7 +68,7 @@ sleep(2000);
 console.clear();
 
 console.log("\n Assim que seus olhos recuperaram a luz, Dylan teve o vislumbre de uma linda floresta, ele se levantou e deu uma olhada ao derredor. Ele estava cada vez mais encantado, quando de repente uma flecha passa de raspão pelo seu braço. ");
-sleep(4000);
+sleep(3000);
 console.clear();
 
 console.log("\nQuando ele se virou, viu uma criatura humanoide, ele era todo azul, com partes verdes e algo esbranquiçado corria pelo seu corpo, se aquela criatura fosse um pouco mais redonda ele poderia afirmar que o planeta Terra estava bem em sua frente.");
@@ -92,7 +92,7 @@ console.log("");
 sleep(2000);
 console.clear();
 
-/* 
+ 
     class Inimigo {
         constructor(nome,duracao){
             this.nome = (nome);
@@ -202,7 +202,7 @@ console.clear();
         boss.dados();
 
         sleep(5000);
-        console.clear();*/
+        console.clear();
 do {
   um();
   function um() {
@@ -225,6 +225,41 @@ do {
       }
     }
     if (contador >= 4) {
+console.log('Dylan enfraquece a criatura que já está a beira da morte e o pergunta "porque está fazendo isso?" e ela responde "está é a minha natureza, eu represento seu mundo e sou guiado pelo Espírito dos humanos, eles não precisam de nenhum motivo para te atacar ou tentar acabar com você, então eu não tenho nenhum motivo certo" e então a criatura desaparece.');
+sleep(4000);
+console.clear();
+
+console.log("Dylan ainda assustado avista um rio a sua frente, ele vai até lá para beber um pouco de água e se senta em uma pedra para refletir sobre o que acabara de acontecer");
+sleep(2000);
+console.clear();
+
+console.log(". Foi quando ele começou a ouvir uma voz doce ecoando em seus ouvidos, ele olhou a sua volta e não conseguiu ver nada, olhou novamente para o rio e lá havia uma sereia muito bonita, sua calda era azul celeste com as pontas vermelhas rubi, sua pele negra brilhava como a lua e seus cabelos desciam em ondas até metade de sua calda. Ela cantava cada vez mais alto, mas tinha em seu rosto uma expressão de dúvida. ");
+sleep(4000);
+console.clear();
+
+console.log("Dylan se perguntou se ele morreria ali, já que em todas as histórias de sereias elas aparecem para seduzir e matar os homens. ");
+sleep(2000);
+console.clear();
+
+console.log("A cada nota que saía da boca dela, ela ia mudando sua expressão de dúvida para raiva, e quanto mais sua raiva ia aumentando, sua calda ia escurecendo e ficando azul, assim como seus belos cabelos iam se arrepiando, como se a sua volta não houvesse gravidade");
+sleep(3000);
+console.clear();
+
+console.log('. A sereia chegou a um estado tão grave, que ele parou de ouvir sua bela canção e então ela berrou "porque não se apaixona por mim?"');
+sleep(2000);
+console.clear();
+
+console.log("A água em volta dela começa a flutuar e as gotas de transformam em lanças que começam a atacar Dylan, ele se esquiva das três primeiras e por instinto joga sua espada na direção da sereia que se joga no rio. ");
+sleep(3000);
+console.clear();
+
+console.log("Sem que ele entenda, sua espada retorna a sua mão e dessa vez a sereia volta para a pedra com ainda mais raiva. ");
+sleep(2000);
+console.clear();
+
+console.log('A espada de Dylan corta o cabelo da sereia, e então ela começa a chorar e gritar "você tem problema? Todos os homens se apaixonam por mim, por acaso você não é homem?" e volta para o fundo do rio.');
+sleep(3000);
+console.clear();
       dois();
     }
   }
