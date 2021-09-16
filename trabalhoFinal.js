@@ -94,7 +94,7 @@ console.log(
 sleep(2000);
 console.clear();
 
-console.log("");
+goblin.dados();
 sleep(2000);
 console.clear();
 
@@ -117,7 +117,7 @@ class Goblin extends Inimigo {
             `);
   }
 }
-let goblin = new Goblin("Terra", 5);
+var goblin = new Goblin("Terra", 5);
 
 class Elfo extends Inimigo {
   constructor(nome) {
@@ -175,14 +175,6 @@ class Boss extends Inimigo {
 }
 let boss = new Boss("Boss", 10);
 
-goblin.dados();
-elfo.dados();
-orc.dados();
-cerbero.dados();
-boss.dados();
-
-sleep(5000);
-console.clear();
 do {
   um();
   function um() {
@@ -253,6 +245,10 @@ do {
       sleep(2000);
       console.clear();
 
+      elfo.dados();
+      sleep(3000);
+      console.clear();
+
       dois();
     }
   }
@@ -313,6 +309,10 @@ do {
         "Depois dele se confessar, sua mãe caiu em prantos e seu pai já ia partir pra cima com seu costumeiro cinto de couro, mas ele reparou que se ele deixasse aquilo acontecer, dessa vez a surra não teria um bom fim. "
       );
       sleep(3000);
+      console.clear();
+
+      orc.dados();
+      sleep(2000);
       console.clear();
 
       tres();
@@ -384,6 +384,10 @@ do {
       sleep(2000);
       console.clear();
 
+      cerbero.dados();
+      sleep(2000);
+      console.clear();
+
       quatro();
     }
   }
@@ -428,6 +432,11 @@ do {
       console.log("");
       sleep(2000);
       console.clear();
+      
+      boss.dado();
+      sleep(3000);
+      console.clear();
+
       cinco();
     }
   }
