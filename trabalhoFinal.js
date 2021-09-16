@@ -186,7 +186,7 @@ do {
       console.log();
       let jogador = prompt("Digite a sequência anterior:");
 
-      if (goblin1 == jogador) {
+      if (goblin1 == jogador) { // um if pra comparar as respostas
         console.clear();
         contador++;
         console.log("Acertou!!");
@@ -318,6 +318,7 @@ do {
     }
   }
 
+  contado = 0;
   function tres() {
     for (var i = 0; i < f3; i++) {
       var orc1 = gerador(6);
@@ -390,6 +391,7 @@ do {
     }
   }
 
+  contado = 0;
   function quatro() {
     for (var i = 0; i < f4; i++) {
       var cebero1 = gerador(6);
@@ -533,6 +535,7 @@ do {
     }
   }
 
+  contado = 0;
   function cinco() {
     for (var i = 0; i < f5; i++) {
       var boss1 = gerador(6);
@@ -568,10 +571,11 @@ do {
     }
   }
 
-  console.log("GAMO OVER");
+  
   var perg = prompt(
     "Dylan morre e retorna à praça. O senhor ao seu lado balança a cabeça e pergunta quer tentar novamente? [S/N]"
   );
+
 } while (perg == "S" || perg == "s");
 
 //agradeço a minha esposa que me ajudou a fazer a historia
