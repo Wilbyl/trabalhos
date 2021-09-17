@@ -35,7 +35,7 @@ function sleep(delay) {  // essa function e pra eu poder escolher a quntidade de
   while (new Date().getTime() < start + delay);
 }
 console.clear();
-console.log(`*******************************************************************************
+console.log(`\n*******************************************************************************
 ******Bem vindo a historia que pode mudar um pouco sua forma de ver o mundo****
 ******************************************************************************* `);
 sleep(5000);
@@ -65,7 +65,7 @@ sleep(4000);
 console.clear();
 
 console.log(
-  "Dylan sem pensar duas vezes pegou a moeda, e então tudo ao seu redor escureceu"
+  "\nDylan sem pensar duas vezes pegou a moeda, e então tudo ao seu redor escureceu"
 );
 sleep(4000);
 console.clear();
@@ -83,15 +83,15 @@ sleep(8000);
 console.clear();
 
 console.log(
-  "A criatura saiu correndo em direção a Dylan e se ele não tivesse se esquivando teria recebido um soco, mais um soco foi desferido e dessa vez o acertou em sua barriga. "
+  "\nA criatura saiu correndo em direção a Dylan e se ele não tivesse se esquivando teria recebido um soco, mais um soco foi desferido e dessa vez o acertou em sua barriga. "
 );
-sleep(4000);
+sleep(5000);
 console.clear();
 
 console.log(
-  "Ele cai de frente se perguntando porque aquilo estava acontecendo, e quando ele se deu conta, em sua cintura havia uma espada, ele a pegou e partiu pra cima da criatura."
+  "\nEle cai de frente se perguntando porque aquilo estava acontecendo, e quando ele se deu conta, em sua cintura havia uma espada, ele a pegou e partiu pra cima da criatura."
 );
-sleep(4000);
+sleep(5000);
 console.clear();
 
 
@@ -173,7 +173,6 @@ class Boss extends Inimigo {
 }
 let boss = new Boss("Boss", 10);
 
-goblin.dado();
 do {
   um();
   function um() {
@@ -197,49 +196,49 @@ do {
     }
     if (contador >= 4) {
       console.log(
-        'Dylan enfraquece a criatura que já está a beira da morte e o pergunta "porque está fazendo isso?" e ela responde "está é a minha natureza, eu represento seu mundo e sou guiado pelo Espírito dos humanos, eles não precisam de nenhum motivo para te atacar ou tentar acabar com você, então eu não tenho nenhum motivo certo" e então a criatura desaparece.'
-      );
-      sleep(8000);
-      console.clear();
-
-      console.log(
-        "Dylan ainda assustado avista um rio a sua frente, ele vai até lá para beber um pouco de água e se senta em uma pedra para refletir sobre o que acabara de acontecer"
-      );
-      sleep(4000);
-      console.clear();
-
-      console.log(
-        ". Foi quando ele começou a ouvir uma voz doce ecoando em seus ouvidos, ele olhou a sua volta e não conseguiu ver nada, olhou novamente para o rio e lá havia uma sereia muito bonita, sua calda era azul celeste com as pontas vermelhas rubi, sua pele negra brilhava como a lua e seus cabelos desciam em ondas até metade de sua calda. Ela cantava cada vez mais alto, mas tinha em seu rosto uma expressão de dúvida. "
+        '\nDylan enfraquece a criatura que já está a beira da morte e o pergunta "porque está fazendo isso?" e ela responde "está é a minha natureza, eu represento seu mundo e sou guiado pelo Espírito dos humanos, eles não precisam de nenhum motivo para te atacar ou tentar acabar com você, então eu não tenho nenhum motivo certo" e então a criatura desaparece.'
       );
       sleep(12000);
       console.clear();
 
       console.log(
-        "Dylan se perguntou se ele morreria ali, já que em todas as histórias de sereias elas aparecem para seduzir e matar os homens. "
-      );
-      sleep(4000);
-      console.clear();
-
-      console.log(
-        "A cada nota que saía da boca dela, ela ia mudando sua expressão de dúvida para raiva, e quanto mais sua raiva ia aumentando, sua calda ia escurecendo e ficando azul, assim como seus belos cabelos iam se arrepiando, como se a sua volta não houvesse gravidade"
-      );
-      sleep(8000);
-      console.clear();
-
-      console.log(
-        '. A sereia chegou a um estado tão grave, que ele parou de ouvir sua bela canção e então ela berrou "porque não se apaixona por mim?"'
-      );
-      sleep(4000);
-      console.clear();
-
-      console.log(
-        "A água em volta dela começa a flutuar e as gotas de transformam em lanças que começam a atacar Dylan, ele se esquiva das três primeiras e por instinto joga sua espada na direção da sereia que se joga no rio. "
+        "\nDylan ainda assustado avista um rio a sua frente, ele vai até lá para beber um pouco de água e se senta em uma pedra para refletir sobre o que acabara de acontecer"
       );
       sleep(6000);
       console.clear();
 
       console.log(
-        "Sem que ele entenda, sua espada retorna a sua mão e dessa vez a sereia volta para a pedra com ainda mais raiva. "
+        ".\n Foi quando ele começou a ouvir uma voz doce ecoando em seus ouvidos, ele olhou a sua volta e não conseguiu ver nada, olhou novamente para o rio e lá havia uma sereia muito bonita, sua calda era azul celeste com as pontas vermelhas rubi, sua pele negra brilhava como a lua e seus cabelos desciam em ondas até metade de sua calda. Ela cantava cada vez mais alto, mas tinha em seu rosto uma expressão de dúvida. "
+      );
+      sleep(12000);
+      console.clear();
+
+      console.log(
+        "\nDylan se perguntou se ele morreria ali, já que em todas as histórias de sereias elas aparecem para seduzir e matar os homens. "
+      );
+      sleep(6000);
+      console.clear();
+
+      console.log(
+        "\nA cada nota que saía da boca dela, ela ia mudando sua expressão de dúvida para raiva, e quanto mais sua raiva ia aumentando, sua calda ia escurecendo e ficando azul, assim como seus belos cabelos iam se arrepiando, como se a sua volta não houvesse gravidade"
+      );
+      sleep(10000);
+      console.clear();
+
+      console.log(
+        '.\n A sereia chegou a um estado tão grave, que ele parou de ouvir sua bela canção e então ela berrou "porque não se apaixona por mim?"'
+      );
+      sleep(4000);
+      console.clear();
+
+      console.log(
+        "\nA água em volta dela começa a flutuar e as gotas de transformam em lanças que começam a atacar Dylan, ele se esquiva das três primeiras e por instinto joga sua espada na direção da sereia que se joga no rio. "
+      );
+      sleep(6000);
+      console.clear();
+
+      console.log(
+        "\nSem que ele entenda, sua espada retorna a sua mão e dessa vez a sereia volta para a pedra com ainda mais raiva. "
       );
       sleep(4000);
       console.clear();
@@ -275,39 +274,39 @@ do {
     }
     if (contador >= 6) {
       console.log(
-        'A espada de Dylan corta o cabelo da sereia, e então ela começa a chorar e gritar "você tem problema? Todos os homens se apaixonam por mim, por acaso você não é homem?" e volta para o fundo do rio.'
+        '\nA espada de Dylan corta o cabelo da sereia, e então ela começa a chorar e gritar "você tem problema? Todos os homens se apaixonam por mim, por acaso você não é homem?" e volta para o fundo do rio.'
       );
-      sleep(4000);
+      sleep(6000);
       console.clear();
 
       console.log(
-        "No momento em que ele percebe o que estava acontecendo, ele cai no chão e começa a chorar, ele nunca quis acreditar naquilo, mas era a realidade. Mas o que ele faria? Como conseguiria olhar para sua querida família e explicar aquela situação? "
+        "\nNo momento em que ele percebe o que estava acontecendo, ele cai no chão e começa a chorar, ele nunca quis acreditar naquilo, mas era a realidade. Mas o que ele faria? Como conseguiria olhar para sua querida família e explicar aquela situação? "
       );
-      sleep(8000);
+      sleep(10000);
       console.clear();
 
       console.log(
-        "A cada pensamento, seu coração apertava mais, e então ele sentiu aquela mão que ele conhecia bem tocando seu ombro. "
+        "\nA cada pensamento, seu coração apertava mais, e então ele sentiu aquela mão que ele conhecia bem tocando seu ombro. "
       );
-      sleep(4000);
+      sleep(6000);
       console.clear();
 
       console.log(
-        "- Filho, o que aconteceu? - Sua mãe estava bem a sua frente, e ao seu lado estava seu pai com seu conhecido olhar de reprovação. Seu coração estava disparando, como ele conseguiria enfrentar seus pais daquele jeito? O que ele faria para superar esse problema? "
+        "-\n Filho, o que aconteceu? - Sua mãe estava bem a sua frente, e ao seu lado estava seu pai com seu conhecido olhar de reprovação. Seu coração estava disparando, como ele conseguiria enfrentar seus pais daquele jeito? O que ele faria para superar esse problema? "
       );
-      sleep(9000);
+      sleep(12000);
       console.clear();
 
       console.log(
-        "Ele com certeza não poderia resolver isso na espada, então decidiu respirar bem fundo e contar toda sua verdade a eles. "
+        "\nEle com certeza não poderia resolver isso na espada, então decidiu respirar bem fundo e contar toda sua verdade a eles. "
       );
-      sleep(4000);
+      sleep(6000);
       console.clear();
 
       console.log(
-        "Depois dele se confessar, sua mãe caiu em prantos e seu pai já ia partir pra cima com seu costumeiro cinto de couro, mas ele reparou que se ele deixasse aquilo acontecer, dessa vez a surra não teria um bom fim. "
+        "\nDepois dele se confessar, sua mãe caiu em prantos e seu pai já ia partir pra cima com seu costumeiro cinto de couro, mas ele reparou que se ele deixasse aquilo acontecer, dessa vez a surra não teria um bom fim. "
       );
-      sleep(8000);
+      sleep(10000);
       console.clear();
 
       orc.dados();
@@ -341,25 +340,25 @@ do {
     }
     if (contador >= 6) {
       console.log(
-        "Dylan decide enfrentar seu pai, ele segura seus braços e grita 'Dessa vez não, dessa vez eu decidi que vou me aceitar, eu vou me amar e vou ser quem eu sou, se você não pode me amar também, eu serei suficiente"
+        "\nDylan decide enfrentar seu pai, ele segura seus braços e grita 'Dessa vez não, dessa vez eu decidi que vou me aceitar, eu vou me amar e vou ser quem eu sou, se você não pode me amar também, eu serei suficiente"
+      );
+      sleep(8000);
+      console.clear();
+
+      console.log(
+        "\nSeus pais dão um sorriso de alívio e desaparecem, deixando Dylan totalmente desnorteado, e ele acaba desmaiando novamente."
       );
       sleep(6000);
       console.clear();
 
       console.log(
-        "Seus pais dão um sorriso de alívio e desaparecem, deixando Dylan totalmente desnorteado, e ele acaba desmaiando novamente."
+        "\nQuando ele acorda novamente, já não estava mais naquela floresta, dessa vez estava em uma cabana bem aconchegante com cheiro de casa antiga e defumador."
       );
-      sleep(4000);
+      sleep(6000);
       console.clear();
 
       console.log(
-        "Quando ele acorda novamente, já não estava mais naquela floresta, dessa vez estava em uma cabana bem aconchegante com cheiro de casa antiga e defumador."
-      );
-      sleep(4000);
-      console.clear();
-
-      console.log(
-        "Um homem entrou na cabana todo vestido em ouro com uma mulher ao seu lado, e o olhou de cima a baixo."
+        "\nUm homem entrou na cabana todo vestido em ouro com uma mulher ao seu lado, e o olhou de cima a baixo."
       );
       sleep(4000);
       console.clear();
@@ -369,15 +368,15 @@ do {
       console.clear();
 
       console.log(
-        "- Sim senhor. - respondeu a mulher pequena de cabelos curtos, olhando para baixo, como se tivesse medo da própria voz"
+        "\n- Sim senhor. - respondeu a mulher pequena de cabelos curtos, olhando para baixo, como se tivesse medo da própria voz"
       );
       sleep(4000);
       console.clear();
 
       console.log(
-        "Ele não merece a misericórdia, veja sua vestimenta de mendigo, o homem nem sequer porta um anel de ouro. - ele bufou e tirou dardos dos bolsos de ouro que ficavam em sua cintura - eu darei um fim nesse imundo aqui mesmo, para que o povo não precise ver tamanha imundice. "
+        "\nEle não merece a misericórdia, veja sua vestimenta de mendigo, o homem nem sequer porta um anel de ouro. - ele bufou e tirou dardos dos bolsos de ouro que ficavam em sua cintura - eu darei um fim nesse imundo aqui mesmo, para que o povo não precise ver tamanha imundice. "
       );
-      sleep(9000);
+      sleep(12000);
       console.clear();
 
       console.log("Ele atira os dardos e Dylan os rebate com sua espada. ");
@@ -414,120 +413,120 @@ do {
     }
     if (contador >= 8) {
       console.log(
-        "Dylan acha o ponto fraco do seu aliado, o pescoço que estava de fora de toda aquela roupa que mais parecia uma armadura, e arranca a cabeça do homem de uma só vez."
+        "\nDylan acha o ponto fraco do seu aliado, o pescoço que estava de fora de toda aquela roupa que mais parecia uma armadura, e arranca a cabeça do homem de uma só vez."
       );
       sleep(6000);
       console.clear();
 
       console.log(
-        "Uma mulher loira coberta por ouro entra na cabana e fica horrorizada com a cena. \nOlá, me chamo Saphira, sou moradora daqui e te encontrei desmaiado na floresta hoje de Manhã "
+        "\nUma mulher loira coberta por ouro entra na cabana e fica horrorizada com a cena. \nOlá, me chamo Saphira, sou moradora daqui e te encontrei desmaiado na floresta hoje de Manhã "
       );
       sleep(8000);
       console.clear();
 
       console.log(
-        "Dylan estranha os bons modos da mulher, mas olha para a janela a sua direita e vê que havia caído a noite"
+        "\nDylan estranha os bons modos da mulher, mas olha para a janela a sua direita e vê que havia caído a noite"
       );
       sleep(4000);
       console.clear();
 
       console.log(
-        "- Não me leve a mal, eu não estou contente com a morte do meu pai, mas ele atacava qualquer pessoa que aparecesse aqui e não estivesse coberta de ouro, então eu já esperava que uma hora alguém o vencesse. "
+        "\n- Não me leve a mal, eu não estou contente com a morte do meu pai, mas ele atacava qualquer pessoa que aparecesse aqui e não estivesse coberta de ouro, então eu já esperava que uma hora alguém o vencesse. "
       );
       sleep(8000);
       console.clear();
 
       console.log(
-        "- Pensei que esse lugar fosse apenas um delírio, ou um sonho, então eu estou mesmo matando pessoas reais? - Dylan pergunta nervoso, e sente seu corpo ficando dormente."
+        "\n- Pensei que esse lugar fosse apenas um delírio, ou um sonho, então eu estou mesmo matando pessoas reais? - Dylan pergunta nervoso, e sente seu corpo ficando dormente."
       );
-      sleep(4000);
+      sleep(6000);
       console.clear();
 
       console.log(
-        "- Na verdade, você só veio parar em uma outra realidade, aqui nós somos testados com nossos próprios problemas, para aprendermos a resolvê-los, então estamos sempre recebendo novas pessoas todos os dias, mas você foi o único a conseguir vencer o meu pai. "
+        "\n- Na verdade, você só veio parar em uma outra realidade, aqui nós somos testados com nossos próprios problemas, para aprendermos a resolvê-los, então estamos sempre recebendo novas pessoas todos os dias, mas você foi o único a conseguir vencer o meu pai. "
       );
       sleep(8000);
       console.clear();
 
       console.log(
-        "- Ela se senta em uma cadeira à frente de uma pequena mesa e o chama para se sentar na outra cadeira. "
+        "\n- Ela se senta em uma cadeira à frente de uma pequena mesa e o chama para se sentar na outra cadeira. "
       );
       sleep(4000);
       console.clear();
 
       console.log(
-        "- Olhe para dentro dessa caixa, aqui você poderá ver todo nosso reino."
+        "\n- Olhe para dentro dessa caixa, aqui você poderá ver todo nosso reino."
       );
       sleep(4000);
       console.clear();
 
       console.log(
-        "Dylan olhou para a caixa, e lá ele viu uma cidade inteira de pessoas vestidas de ouro dos pés a cabeça, casais heterossexuais, homossexual, poliamor e pessoas vivendo sozinhas com seus gatos ou cachorros."
+        "\nDylan olhou para a caixa, e lá ele viu uma cidade inteira de pessoas vestidas de ouro dos pés a cabeça, casais heterossexuais, homossexual, poliamor e pessoas vivendo sozinhas com seus gatos ou cachorros."
       );
       sleep(9000);
       console.clear();
 
       console.log(
-        ". Viu também lindas cachoeiras e lagos cristalinos com muitas sereias e tritoes, pássaros lindos de todas as cores e uma vasta linha de aparelhos com uma tecnologia tão avançada que ele não saberia dizer o que eram"
+        "\n. Viu também lindas cachoeiras e lagos cristalinos com muitas sereias e tritoes, pássaros lindos de todas as cores e uma vasta linha de aparelhos com uma tecnologia tão avançada que ele não saberia dizer o que eram"
       );
       sleep(8000);
       console.clear();
 
       console.log(
-        "- Esse é o nosso mundo, e já que você derrotou nosso rei, tem o direito de tomar seu lugar. Aqui, você faz a lei, você só precisa dizer sim. - Ela levanta da cadeira e sai da cabana, o deixando sozinho para pensar."
+        "\n- Esse é o nosso mundo, e já que você derrotou nosso rei, tem o direito de tomar seu lugar. Aqui, você faz a lei, você só precisa dizer sim. - Ela levanta da cadeira e sai da cabana, o deixando sozinho para pensar."
       );
       sleep(8000);
       console.clear();
 
       console.log(
-        "Realmente a tentação era gigantesca. Ele deveria ficar ali e viver um sonho? Ou deveria enfrentar a realidade da vida e voltar para casa? "
+        "\nRealmente a tentação era gigantesca. Ele deveria ficar ali e viver um sonho? Ou deveria enfrentar a realidade da vida e voltar para casa? "
       );
       sleep(4000);
       console.clear();
 
       console.log(
-        "Dessa vez esse seria seu maior desafio, aceitar sua vida real, ou viver a vida fácil e maravilhosa que todos desejam? "
+        "\nDessa vez esse seria seu maior desafio, aceitar sua vida real, ou viver a vida fácil e maravilhosa que todos desejam? "
       );
       sleep(4000);
       console.clear();
 
       console.log(
-        "Ele se olhou no espelho que tinha na porta e se perguntou o que deveria fazer, a dúvida consumia sua cabeça, ele já não sabia mais o que era a realidade e fechou os olhos de agonia."
+        "\nEle se olhou no espelho que tinha na porta e se perguntou o que deveria fazer, a dúvida consumia sua cabeça, ele já não sabia mais o que era a realidade e fechou os olhos de agonia."
       );
       sleep(6000);
       console.clear();
 
       console.log(
-        "Quando seus olhos se abriram, ele estava em um ambiente escuro, e uma névoa densa se arrastava dos seus pés até os seus joelhos, ele ouviu o som de uma luta de espadas, e quando olhou para trás ele se viu, se viu lutando consigo mesmo, mas havia algo diferente naqueles dois Dylans."
+        "\nQuando seus olhos se abriram, ele estava em um ambiente escuro, e uma névoa densa se arrastava dos seus pés até os seus joelhos, ele ouviu o som de uma luta de espadas, e quando olhou para trás ele se viu, se viu lutando consigo mesmo, mas havia algo diferente naqueles dois Dylans."
       );
       sleep(12000);
       console.clear();
 
       console.log(
-        "Tudo condizia com a verdade, um homem alto, magro e de cabelos negros, mas sua espada era azul, e os outros dois não usavam a mesma espada que ele. "
+        "\nTudo condizia com a verdade, um homem alto, magro e de cabelos negros, mas sua espada era azul, e os outros dois não usavam a mesma espada que ele. "
+      );
+      sleep(6000);
+      console.clear();
+
+      console.log(
+        "\nUm tinha uma espada dourada e usava uma roupa feita de ouro, com certeza esse Dylan representava a parte em sí que gostaria de continuar naquele lugar"
+      );
+      sleep(6000);
+      console.clear();
+
+      console.log(
+        "\no outro usava as mesmas roupas que de costume, mas sua espada era prateada, aquele representava o Dylan que queria ir para casa. "
       );
       sleep(4000);
       console.clear();
 
       console.log(
-        "Um tinha uma espada dourada e usava uma roupa feita de ouro, com certeza esse Dylan representava a parte em sí que gostaria de continuar naquele lugar"
+        "\nOs dois lutavam arduamente sem cansar, e ele já não podia mais escolher quem venceria. "
       );
       sleep(4000);
       console.clear();
 
-      console.log(
-        "o outro usava as mesmas roupas que de costume, mas sua espada era prateada, aquele representava o Dylan que queria ir para casa. "
-      );
-      sleep(4000);
-      console.clear();
-
-      console.log(
-        "Os dois lutavam arduamente sem cansar, e ele já não podia mais escolher quem venceria. "
-      );
-      sleep(4000);
-      console.clear();
-
-      boss.dado();
+      boss.dados();
       sleep(6000);
       console.clear();
 
@@ -558,13 +557,13 @@ do {
     }
     if (contador >= 9) {
       console.log(
-        "Depois de uma hora de batalha, finalmente um deles prevaleceu, ele sorriu e apertou a mão do Dylan original. "
+        "\nDepois de uma hora de batalha, finalmente um deles prevaleceu, ele sorriu e apertou a mão do Dylan original. "
       );
       sleep(4000);
       console.clear();
 
       console.log(
-        "Ele piscou e estava com as mesmas vestimentas de quem venceu a batalha, ele abriu a porta da cabana, e então, ele estava onde queria estar."
+        "\nEle piscou e estava com as mesmas vestimentas de quem venceu a batalha, ele abriu a porta da cabana, e então, ele estava onde queria estar."
       );
       sleep(6000);
       console.clear();
@@ -573,7 +572,7 @@ do {
 
   
   var perg = prompt(
-    "Dylan morre e retorna à praça. O senhor ao seu lado balança a cabeça e pergunta quer tentar novamente? [S/N]"
+    "\nDylan morre e retorna à praça. O senhor ao seu lado balança a cabeça e pergunta quer tentar novamente? [S/N]"
   );
 
 } while (perg == "S" || perg == "s");
