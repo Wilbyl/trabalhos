@@ -576,7 +576,7 @@ do {
   }
 
   var perg = prompt(
-    "\nDylan morre e retorna à praça. O senhor ao seu lado balança a cabeça e pergunta quer tentar novamente? [S/N]"
+    "Dylan morre e retorna à praça. O senhor ao seu lado balança a cabeça e pergunta quer tentar novamente? [S/N]"
   );
 } while (perg == "S" || perg == "s");
 
