@@ -120,7 +120,7 @@ var goblin = new Goblin("Terra", 5);
 class Elfo extends Inimigo {
   constructor(nome) {
     super(nome);
-    this.duracao = 8;
+    this.duracao = 5;
   }
   dados() {
     console.log(`
@@ -134,7 +134,7 @@ let elfo = new Elfo("Sereia", 7);
 class Orc extends Inimigo {
   constructor(nome) {
     super(nome);
-    this.duracao = 12;
+    this.duracao = 7;
   }
   dados() {
     console.log(`
@@ -148,7 +148,7 @@ let orc = new Orc("Os pais", 8);
 class Cerbero extends Inimigo {
   constructor(nome) {
     super(nome);
-    this.duracao = 16;
+    this.duracao = 10;
   }
   dados() {
     console.log(`
@@ -162,7 +162,7 @@ let cerbero = new Cerbero("Ostençao", 10);
 class Boss extends Inimigo {
   constructor(nome) {
     super(nome);
-    this.duracao = 18;
+    this.duracao = 10;
   }
   dados() {
     console.log(`
@@ -180,7 +180,7 @@ do {
       var goblin1 = gerador(5);
       console.log("memorize o codigo a baixo ");
       console.log(goblin1);
-      sleep(4000);
+      sleep(5000);
       console.clear();
       console.log();
       let jogador = prompt("Digite a sequência anterior:");
@@ -257,7 +257,7 @@ do {
       var elfo1 = gerador(6);
       console.log("memorize o codigo a baixo ");
       console.log(elfo1);
-      sleep(3000);
+      sleep(4000);
       console.clear();
       console.log();
       let jogador = prompt("Digite a sequência anterior:");
@@ -323,7 +323,7 @@ do {
       var orc1 = gerador(6);
       console.log("memorize o codigo a baixo ");
       console.log(orc1);
-      sleep(3000);
+      sleep(4000);
       console.clear();
       console.log();
       let jogador = prompt("Digite a sequência anterior:");
@@ -393,7 +393,7 @@ do {
   contado = 0;
   function quatro() {
     for (var i = 0; i < f4; i++) {
-      var cebero1 = gerador(6);
+      var cebero1 = gerador(7);
       console.log("memorize o codigo a baixo ");
       console.log(cebero1);
       sleep(3000);
@@ -537,10 +537,10 @@ do {
   contado = 0;
   function cinco() {
     for (var i = 0; i < f5; i++) {
-      var boss1 = gerador(6);
+      var boss1 = gerador(8);
       console.log("memorize o codigo a baixo ");
       console.log(boss1);
-      sleep(3000);
+      sleep(2000);
       console.clear();
       console.log();
       let jogador = prompt("Digite a sequência anterior:");
