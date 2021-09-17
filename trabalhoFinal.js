@@ -13,13 +13,14 @@ específico com relação as escolhas que precisam ser feitas, para que seu jogo
 seja divertido!*/
 const prompt = require("prompt-sync")();
 
-var f1 = 5;  //aqui estao a repetiçao de vezes que vai roda cada fase
+var f1 = 5; //aqui estao a repetiçao de vezes que vai roda cada fase
 var f2 = 7;
 var f3 = 8;
 var f4 = 10;
 var f5 = 10;
 var contador = 0;
-function gerador(tamanho) { //essa funçao e pra gerar ums string aleatoria pra usar nos games 
+function gerador(tamanho) {
+  //essa funçao e pra gerar ums string aleatoria pra usar nos games
   var stringAleatoria = "";
   var caracteres = "asd123";
   for (var i = 0; i < tamanho; i++) {
@@ -30,7 +31,8 @@ function gerador(tamanho) { //essa funçao e pra gerar ums string aleatoria pra 
   return stringAleatoria;
 }
 
-function sleep(delay) {  // essa function e pra eu poder escolher a quntidade de tempo ate executar outro codigo
+function sleep(delay) {
+  // essa function e pra eu poder escolher a quntidade de tempo ate executar outro codigo
   var start = new Date().getTime();
   while (new Date().getTime() < start + delay);
 }
@@ -94,19 +96,19 @@ console.log(
 sleep(5000);
 console.clear();
 
-
-
-class Inimigo { // aqui criei uma class pra armazenar o nome dos inimigos
+class Inimigo {
+  // aqui criei uma class pra armazenar o nome dos inimigos
   constructor(nome, duracao) {
     this.nome = nome;
     this.duracao = duracao;
   }
 }
 
-class Goblin extends Inimigo { //aqui fiz uma sub pra gerar cada inimigo
+class Goblin extends Inimigo {
+  //aqui fiz uma sub pra gerar cada inimigo
   constructor(nome) {
     super(nome);
-    (this.duracao = ""), (this.status = "");
+    (this.duracao = 5), (this.status = "");
   }
   dados() {
     console.log(`
@@ -174,9 +176,11 @@ class Boss extends Inimigo {
 let boss = new Boss("Boss", 10);
 
 do {
+  goblin.dados();
   um();
   function um() {
-    for (var i = 0; i < f1; i++) { //essa e minha function que valida se o usuario digitou o mesmo que bot
+    for (var i = 0; i < f1; i++) {
+      //essa e minha function que valida se o usuario digitou o mesmo que bot
       var goblin1 = gerador(5);
       console.log("memorize o codigo a baixo ");
       console.log(goblin1);
@@ -185,13 +189,14 @@ do {
       console.log();
       let jogador = prompt("Digite a sequência anterior:");
 
-      if (goblin1 == jogador) { // um if pra comparar as respostas
+      if (goblin1 == jogador) {
+        // um if pra comparar as respostas
         console.clear();
         contador++;
         console.log("Acertou!!");
       } else if (goblin1 != jogador) {
         console.clear();
-        console.log("perdeu");
+        console.log("Errou!!");
       }
     }
     if (contador >= 4) {
@@ -263,11 +268,11 @@ do {
       let jogador = prompt("Digite a sequência anterior:");
 
       if (elfo1 == jogador) {
-        console.log("Acertou!!");
-        contador++;
         console.clear();
+        contador++;
+        console.log("Acertou!!");
       } else if (elfo1 != jogador) {
-        console.log("perdeu");
+        console.log("Errou!!");
 
         console.clear();
       }
@@ -329,11 +334,11 @@ do {
       let jogador = prompt("Digite a sequência anterior:");
 
       if (orc1 == jogador) {
-        console.log("Acertou!!");
-        contador++;
         console.clear();
+        contador++;
+        console.log("Acertou!!");
       } else if (orc1 != jogador) {
-        console.log("perdeu");
+        console.log("Errou!!");
 
         console.clear();
       }
@@ -402,11 +407,11 @@ do {
       let jogador = prompt("Digite a sequência anterior:");
 
       if (cebero1 == jogador) {
-        console.log("Acertou!!");
-        contador++;
         console.clear();
+        contador++;
+        console.log("Acertou!!");
       } else if (cebero1 != jogador) {
-        console.log("perdeu");
+        console.log("Errou!!");
 
         console.clear();
       }
@@ -546,12 +551,12 @@ do {
       let jogador = prompt("Digite a sequência anterior:");
 
       if (boss1 == jogador) {
-        console.log("Acertou!!");
-        contador++;
         console.clear();
+        contador++;
+        console.log("Acertou!!");
       } else if (boss1 != jogador) {
-        console.log("perdeu");
-        contador--;
+        console.log("Errou!!");
+
         console.clear();
       }
     }
@@ -570,11 +575,9 @@ do {
     }
   }
 
-  
   var perg = prompt(
     "\nDylan morre e retorna à praça. O senhor ao seu lado balança a cabeça e pergunta quer tentar novamente? [S/N]"
   );
-
 } while (perg == "S" || perg == "s");
 
 //agradeço a minha esposa que me ajudou a fazer a historia
